@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var previewCard: String = ""
     
     
-    let cardImageArray = ["",""]
+    let cardImageArray = ["Sean Lee","Nicole Pitre"]
     
     @IBOutlet var previewCardImageView: UIImageView!
     @IBOutlet var cardView: UIView!
@@ -31,10 +31,10 @@ class ViewController: UIViewController {
         divisor = (view.frame.width/2)/0.61
         
         
-        card = "" //DATABASE
+        card = "Sean Lee" //DATABASE
 
 
-        previewCard = "" //DATABASE
+        previewCard = "Nicole Pitre" //DATABASE
         
         
         cardImageView.image = UIImage(named: card)//RANDOMIZE THIS
@@ -106,9 +106,17 @@ class ViewController: UIViewController {
         
         let bufferTime = 0.25
         DispatchQueue.main.asyncAfter(deadline: .now() + bufferTime, execute: {
+            var temp = self.card //temp to rotate DELETE IN REAL VERSION
+            self.card = self.previewCard
+            
+            
+            self.previewCard = temp //DATABASE //temp to rotate DELETE IN REAL VERSION
+            
+            /*
             self.card = self.previewCard
             
             self.previewCard = "" //DATABASE
+            */
             
             self.cardImageView.image = UIImage(named: self.card)
             self.previewCardImageView.image = UIImage(named: self.previewCard)
