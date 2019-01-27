@@ -19,6 +19,9 @@
 		11AFD4C421FD7A8A00224AAC /* InboxSpecificUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4C321FD7A8A00224AAC /* InboxSpecificUserViewController.swift */; };
 		11AFD4C821FDABAA00224AAC /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4C721FDABAA00224AAC /* SettingsTableViewController.swift */; };
 		11AFD4CA21FDB1B400224AAC /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4C921FDB1B400224AAC /* FilterTableViewController.swift */; };
+		11AFD4CF21FDE29000224AAC /* Register2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4CE21FDE29000224AAC /* Register2ViewController.swift */; };
+		11AFD4D121FDE2A300224AAC /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4D021FDE2A300224AAC /* Register1ViewController.swift */; };
+		11AFD4D321FDE2B100224AAC /* Register3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4D221FDE2B100224AAC /* Register3ViewController.swift */; };
 		4DB1FCAB08D235C2D4E23F7A /* Pods_Inbox_TechJobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1621D69B1AC5DCD39CF0AFE5 /* Pods_Inbox_TechJobs.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		11AFD4C321FD7A8A00224AAC /* InboxSpecificUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxSpecificUserViewController.swift; sourceTree = "<group>"; };
 		11AFD4C721FDABAA00224AAC /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		11AFD4C921FDB1B400224AAC /* FilterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
+		11AFD4CE21FDE29000224AAC /* Register2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register2ViewController.swift; sourceTree = "<group>"; };
+		11AFD4D021FDE2A300224AAC /* Register1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register1ViewController.swift; sourceTree = "<group>"; };
+		11AFD4D221FDE2B100224AAC /* Register3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register3ViewController.swift; sourceTree = "<group>"; };
 		1621D69B1AC5DCD39CF0AFE5 /* Pods_Inbox_TechJobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inbox_TechJobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A59669DE401E7A0B40E123 /* Pods-Inbox-TechJobs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inbox-TechJobs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inbox-TechJobs/Pods-Inbox-TechJobs.release.xcconfig"; sourceTree = "<group>"; };
 		9822D4A9C591B190938C3080 /* Pods-Inbox-TechJobs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inbox-TechJobs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inbox-TechJobs/Pods-Inbox-TechJobs.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +81,7 @@
 		11A2A68321FD18C6004F0E96 /* Inbox-TechJobs */ = {
 			isa = PBXGroup;
 			children = (
+				11AFD4CB21FDE24400224AAC /* RegisterViewControllers */,
 				11A2A68421FD18C6004F0E96 /* AppDelegate.swift */,
 				11A2A68621FD18C6004F0E96 /* ViewController.swift */,
 				11AFD4C721FDABAA00224AAC /* SettingsTableViewController.swift */,
@@ -90,6 +97,16 @@
 				11AFD4C321FD7A8A00224AAC /* InboxSpecificUserViewController.swift */,
 			);
 			path = "Inbox-TechJobs";
+			sourceTree = "<group>";
+		};
+		11AFD4CB21FDE24400224AAC /* RegisterViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11AFD4D021FDE2A300224AAC /* Register1ViewController.swift */,
+				11AFD4CE21FDE29000224AAC /* Register2ViewController.swift */,
+				11AFD4D221FDE2B100224AAC /* Register3ViewController.swift */,
+			);
+			path = RegisterViewControllers;
 			sourceTree = "<group>";
 		};
 		92F2CEDBF5D2AD082EA60C4D /* Pods */ = {
@@ -231,12 +248,15 @@
 			files = (
 				11AFD4C221FD76B400224AAC /* InboxTableViewController.swift in Sources */,
 				11AFD4CA21FDB1B400224AAC /* FilterTableViewController.swift in Sources */,
+				11AFD4D121FDE2A300224AAC /* Register1ViewController.swift in Sources */,
 				11AFD4B821FD602F00224AAC /* LoginViewController.swift in Sources */,
 				11AFD4BC21FD69A100224AAC /* Helper.swift in Sources */,
 				11A2A68721FD18C6004F0E96 /* ViewController.swift in Sources */,
 				11AFD4C821FDABAA00224AAC /* SettingsTableViewController.swift in Sources */,
+				11AFD4D321FDE2B100224AAC /* Register3ViewController.swift in Sources */,
 				11AFD4C421FD7A8A00224AAC /* InboxSpecificUserViewController.swift in Sources */,
 				11A2A68521FD18C6004F0E96 /* AppDelegate.swift in Sources */,
+				11AFD4CF21FDE29000224AAC /* Register2ViewController.swift in Sources */,
 				11A2A69B21FD29D5004F0E96 /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
