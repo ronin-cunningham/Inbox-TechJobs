@@ -7,9 +7,9 @@
 //
 
 import UIKit
-var connectedUsers = ["Ronin","Ruchit"]
-var userDesc = ["Canadian", "American"]
-var userImages: [UIImage] = [UIImage(imageLiteralResourceName: "icons8-name-90"), UIImage(imageLiteralResourceName: "icons8-name-90")] //image literal
+var connectedUsers = ["Nicole Pitre","Sean Lee"]
+var userDesc = ["I'm grateful to be part of Paddle, one of the UK's fastest growing software companies (5th this year in the Deloitte Fast 50). Our mission is to help software businesses succeed - enabling them to focus on creating products the world loves. If you'd like to learn more about our platform, vision or open roles, drop me a message here or at nicole@paddle.com.", "Proud to play a small role in advancing Canada and Israel as a non-profit professional since 2007."]
+var userImages: [UIImage] = [UIImage(imageLiteralResourceName: "Nicole Pitre"), UIImage(imageLiteralResourceName: "Sean Lee")] //image literal
 var myIndex = 0
 
 class InboxTableViewController: UITableViewController {
