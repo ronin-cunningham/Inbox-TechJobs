@@ -31,7 +31,6 @@ class LoginViewController : UIViewController {
         
    
     }
-
     
     override func viewDidLoad() {
         //LOAD BACKGROUND
