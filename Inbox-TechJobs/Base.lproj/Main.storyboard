@@ -26,6 +26,9 @@
                                 <rect key="frame" x="187" y="129" width="153" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change profile picture"/>
+                                <connections>
+                                    <action selector="importImage:" destination="2T9-MG-83L" eventType="touchUpInside" id="ytJ-0j-6AH"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Key Skills" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OfN-jj-HXR" userLabel="KeySkills">
                                 <rect key="frame" x="50" y="263" width="275" height="30"/>
@@ -67,6 +70,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="profilePicture" destination="XDw-2L-zO9" id="nM7-Jf-ynu"/>
+                        <outlet property="userImage" destination="XDw-2L-zO9" id="VJB-xW-53c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mtb-Oe-hMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -312,9 +316,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3b-gB-kfi">
-                                <rect key="frame" x="103" y="215" width="145" height="30"/>
+                                <rect key="frame" x="132" y="215" width="88" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Choose/Take a photo"/>
+                                <state key="normal" title="Take a photo"/>
                                 <connections>
                                     <action selector="importImage:" destination="zTa-t9-AbV" eventType="touchUpInside" id="OKM-yd-geL"/>
                                 </connections>
