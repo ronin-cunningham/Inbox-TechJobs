@@ -8,9 +8,33 @@
 
 import UIKit
 
-class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     @IBOutlet var label: UILabel!
     @IBOutlet var pickerView: UIPickerView!
+    
+    @IBOutlet weak var userImage: UIImageView!
+    
+    @IBAction func importImage(_ sender: Any) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true)
+    }
+   
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            userImage.image = image
+            //PROFILE IMAGE GLOBALLY CHANGES, AND IN PROFILE TAB, AND IN INBOX TAB
+            // UPLOAD IMAGE TO DATABASE???
+        } else {
+            //Error message
+        }
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     let status = ["Full time", "Intern", "Student"]
     

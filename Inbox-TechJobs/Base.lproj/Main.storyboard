@@ -270,7 +270,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="81s-OB-48b">
-                                <rect key="frame" x="97" y="325" width="187" height="89"/>
+                                <rect key="frame" x="82" y="340" width="187" height="89"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="zTa-t9-AbV" id="JHB-HN-f1u"/>
@@ -293,7 +293,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Educational Institutions" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-a7-1K3">
-                                <rect key="frame" x="137" y="214" width="97" height="30"/>
+                                <rect key="frame" x="87" y="258" width="176" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -307,8 +307,20 @@
                                     <segue destination="ncL-gy-doU" kind="show" id="A4l-ex-sRF"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNB-Ff-1ck">
+                                <rect key="frame" x="112" y="79" width="127" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3b-gB-kfi">
+                                <rect key="frame" x="103" y="215" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Choose/Take a photo"/>
+                                <connections>
+                                    <action selector="importImage:" destination="zTa-t9-AbV" eventType="touchUpInside" id="OKM-yd-geL"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employment status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrQ-I9-tQM">
-                                <rect key="frame" x="112" y="296" width="147" height="21"/>
+                                <rect key="frame" x="103" y="311" width="147" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -321,6 +333,7 @@
                     <connections>
                         <outlet property="label" destination="ZrQ-I9-tQM" id="a10-l8-RHx"/>
                         <outlet property="pickerView" destination="81s-OB-48b" id="hDZ-DN-E8u"/>
+                        <outlet property="userImage" destination="mNB-Ff-1ck" id="pfy-jf-rRB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="89f-rw-dAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -969,6 +982,7 @@
         <image name="icons8-user-50" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="kLV-UA-k5A"/>
         <segue reference="7hJ-tM-h0v"/>
         <segue reference="A4l-ex-sRF"/>
         <segue reference="2hK-UM-Aoa"/>
