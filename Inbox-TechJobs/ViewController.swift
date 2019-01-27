@@ -103,18 +103,27 @@ class ViewController: UIViewController {
     
     
     func resetCard() {
-        card = previewCard
         
-        previewCard = "" //DATABASE
+        let bufferTime = 0.25
+        DispatchQueue.main.asyncAfter(deadline: .now() + bufferTime, execute: {
+            self.card = self.previewCard
+            
+            self.previewCard = "" //DATABASE
+            
+            self.cardImageView.image = UIImage(named: self.card)
+            self.previewCardImageView.image = UIImage(named: self.previewCard)
+            
+            self.yesnoImageView.alpha = 0
+            self.cardView.transform = CGAffineTransform.identity
+            self.cardView.center = CGPoint(x: self.view.center.x, y: (self.view.center.y * 1.18))
+            self.cardView.alpha = 1
+            })
+            
         
-        self.cardImageView.image = UIImage(named: self.card)
-        self.previewCardImageView.image = UIImage(named: self.previewCard)
+            
+        }
         
-        self.yesnoImageView.alpha = 0
-        self.cardView.transform = CGAffineTransform.identity
-        self.cardView.center = CGPoint(x: self.view.center.x, y: (self.view.center.y * 1.18))
-        self.cardView.alpha = 1
-    }
+    
 
 }
 
