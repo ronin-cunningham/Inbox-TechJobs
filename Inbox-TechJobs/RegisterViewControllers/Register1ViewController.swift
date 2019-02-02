@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-
+var uid : String? = ""
 class Register1ViewController: UIViewController {
 
     @IBOutlet weak var _firstName: UITextField!
@@ -53,7 +53,7 @@ class Register1ViewController: UIViewController {
                     if user != nil {
                         //GO TO NEXT PAGE
                         let currentUser = Auth.auth().currentUser
-                        let uid = currentUser?.uid
+                        uid = currentUser?.uid
                         
                         let ref = Database.database().reference()
                         let employeeRef = ref.child("Employees")
