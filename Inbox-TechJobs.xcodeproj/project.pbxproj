@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11A2A68121FD18C6004F0E96 /* Inbox-TechJobsAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inbox-TechJobsAid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A2A68121FD18C6004F0E96 /* Inbox-TechJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inbox-TechJobs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A2A68421FD18C6004F0E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A2A68621FD18C6004F0E96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11A2A68921FD18C6004F0E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		11A2A68221FD18C6004F0E96 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11A2A68121FD18C6004F0E96 /* Inbox-TechJobsAid.app */,
+				11A2A68121FD18C6004F0E96 /* Inbox-TechJobs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11A2A68021FD18C6004F0E96 /* Inbox-TechJobsAid */ = {
+		11A2A68021FD18C6004F0E96 /* Inbox-TechJobs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11A2A69321FD18C7004F0E96 /* Build configuration list for PBXNativeTarget "Inbox-TechJobsAid" */;
+			buildConfigurationList = 11A2A69321FD18C7004F0E96 /* Build configuration list for PBXNativeTarget "Inbox-TechJobs" */;
 			buildPhases = (
 				0F331AD6AB6A01153123306D /* [CP] Check Pods Manifest.lock */,
 				11A2A67D21FD18C6004F0E96 /* Sources */,
@@ -146,9 +146,9 @@
 			);
 			dependencies = (
 			);
-			name = "Inbox-TechJobsAid";
+			name = "Inbox-TechJobs";
 			productName = "Inbox-TechJobs";
-			productReference = 11A2A68121FD18C6004F0E96 /* Inbox-TechJobsAid.app */;
+			productReference = 11A2A68121FD18C6004F0E96 /* Inbox-TechJobs.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11A2A68021FD18C6004F0E96 /* Inbox-TechJobsAid */,
+				11A2A68021FD18C6004F0E96 /* Inbox-TechJobs */,
 			);
 		};
 /* End PBXProject section */
@@ -455,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11A2A69321FD18C7004F0E96 /* Build configuration list for PBXNativeTarget "Inbox-TechJobsAid" */ = {
+		11A2A69321FD18C7004F0E96 /* Build configuration list for PBXNativeTarget "Inbox-TechJobs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11A2A69421FD18C7004F0E96 /* Debug */,
