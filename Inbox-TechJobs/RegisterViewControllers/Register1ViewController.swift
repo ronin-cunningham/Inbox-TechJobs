@@ -26,7 +26,7 @@ class Register1ViewController: UIViewController {
         nextButton.layer.cornerRadius = 10
         nextButton.layer.masksToBounds = true
         // Do any additional setup after loading the view.
-    }
+        }
     
     let ref = Database.database().reference().child("Employees")
     
@@ -52,13 +52,23 @@ class Register1ViewController: UIViewController {
                     //check that user is not nil
                     if user != nil {
                         //GO TO NEXT PAGE
+                        let currentUser = Auth.auth().currentUser
+                        let uid = currentUser?.uid
+                        
+                        let ref = Database.database().reference()
+                        let employeeRef = ref.child("Employees")
+                        
+                        employeeRef.child(uid!).setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
+                        
                             self.performSegue(withIdentifier: "accountCreationNextSegue", sender: self)
                     } else {
                         self.errorMessage.isHidden = false
                     }
                     
                 }
-                ref.childByAutoId().setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
+                
+                //guard let employeeID = Auth.auth().currentUser?.uid else {return}
+                
             }
         }
     }

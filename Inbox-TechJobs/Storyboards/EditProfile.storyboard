@@ -80,7 +80,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmO-Nr-Llh">
-                                <rect key="frame" x="127.5" y="527" width="120" height="30"/>
+                                <rect key="frame" x="127.5" y="522" width="120" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="nwG-kk-qtG"/>
@@ -115,11 +115,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wov-NK-ucR"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="icons8-new-post-40" id="OlJ-uJ-4Ii"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Edit profile" id="9Xo-P3-BCy">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="kug-Z8-yCE"/>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="positionButton" destination="vik-t8-VtM" id="0Sz-61-UED"/>
                         <outlet property="profilePicture" destination="XDw-2L-zO9" id="nM7-Jf-ynu"/>
@@ -131,6 +132,9 @@
             <point key="canvasLocation" x="-898.39999999999998" y="-2077.5112443778112"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-new-post-40" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="92N-LA-baD"/>
     </inferredMetricsTieBreakers>
