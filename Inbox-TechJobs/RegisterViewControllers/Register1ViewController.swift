@@ -50,7 +50,6 @@ class Register1ViewController: UIViewController {
                     //check that user is not nil
                     if user != nil {
                         //GO TO NEXT PAGE
-                        
                             self.performSegue(withIdentifier: "accountCreationNextSegue", sender: self)
                     } else {
                         self.errorMessage.isHidden = false
