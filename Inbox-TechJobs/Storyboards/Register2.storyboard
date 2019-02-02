@@ -136,7 +136,6 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonAction:" destination="zTa-t9-AbV" eventType="touchUpInside" id="WG9-dj-l2X"/>
-                                    <action selector="register2NextTapped:" destination="zTa-t9-AbV" eventType="touchUpInside" id="Viy-gw-DGG"/>
                                     <segue destination="feq-Mj-bcu" kind="show" id="kLV-UA-k5A"/>
                                 </connections>
                             </button>
@@ -150,9 +149,7 @@
                         <outlet property="_locationPicker" destination="ylZ-aI-Zed" id="5jA-0y-fmF"/>
                         <outlet property="_positionPicker" destination="BVt-GK-v95" id="eTE-At-t3d"/>
                         <outlet property="_userImage" destination="mNB-Ff-1ck" id="esB-ia-t6x"/>
-                        <outlet property="locationPicker" destination="ylZ-aI-Zed" id="CLd-jq-CsM"/>
                         <outlet property="nextButton" destination="03s-Ib-hG0" id="Uf0-pZ-sYw"/>
-                        <outlet property="positionPicker" destination="BVt-GK-v95" id="hXy-dM-vJH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="89f-rw-dAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
