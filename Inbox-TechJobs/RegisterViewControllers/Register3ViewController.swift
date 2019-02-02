@@ -11,8 +11,16 @@ import UIKit
 
 class Register3ViewController: UIViewController {
     
+    @IBOutlet weak var monday: UISwitch!
+    @IBOutlet weak var tuesday: UISwitch!
+    @IBOutlet weak var wednesday: UISwitch!
+    @IBOutlet weak var thursday: UISwitch!
+    @IBOutlet weak var friday: UISwitch!
+    @IBOutlet weak var saturday: UISwitch!
+    @IBOutlet weak var sunday: UISwitch!
     
-//
+    @IBOutlet weak var tellMeAboutYourself: UITextField!
+    //
 //    let degrees = ["Computer Science", "Computer Engineering", "Software Engineering", "MBA"]
 //    let travelDistance = ["10km", "20km", "30km", "40km", "50km"]
 //

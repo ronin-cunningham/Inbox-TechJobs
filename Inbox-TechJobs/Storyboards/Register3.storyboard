@@ -146,6 +146,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SLt-xf-gpj"/>
                     </view>
+                    <connections>
+                        <outlet property="friday" destination="PLe-eZ-QYQ" id="1Fs-a8-PSr"/>
+                        <outlet property="monday" destination="Hou-nz-TNR" id="wh4-Od-jZu"/>
+                        <outlet property="saturday" destination="cJg-Rb-xch" id="Zwp-Hr-Vp7"/>
+                        <outlet property="sunday" destination="VYR-9E-hu3" id="u7w-rL-tHs"/>
+                        <outlet property="tellMeAboutYourself" destination="drI-WC-haO" id="QfQ-59-PW6"/>
+                        <outlet property="thursday" destination="IIq-CH-dgQ" id="G1N-kX-IL9"/>
+                        <outlet property="tuesday" destination="ATu-tr-hcJ" id="kgW-zz-hKA"/>
+                        <outlet property="wednesday" destination="q8X-CW-zhe" id="qWe-cY-mzF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqw-Fa-FT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
