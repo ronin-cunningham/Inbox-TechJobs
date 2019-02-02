@@ -49,13 +49,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXa-Eh-NpO">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nvi-Fc-SJg">
                                         <rect key="frame" x="0.0" y="130" width="144" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nvi-Fc-SJg">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXa-Eh-NpO">
                                         <rect key="frame" x="0.0" y="195" width="144" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -73,7 +73,7 @@
                                 <rect key="frame" x="127" y="489" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.017548669817216256" green="0.13515608929903644" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Nextt">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -91,6 +91,8 @@
                     </view>
                     <connections>
                         <outlet property="_email" destination="Nvi-Fc-SJg" id="blf-Eq-QsD"/>
+                        <outlet property="_firstName" destination="pSc-EN-iyK" id="azI-cD-9s0"/>
+                        <outlet property="_lastName" destination="ZkV-Mg-idP" id="7yk-Ic-fR1"/>
                         <outlet property="_password" destination="tXa-Eh-NpO" id="Qv9-P2-06D"/>
                         <outlet property="_reEnterPassword" destination="BWE-Lv-hCb" id="JQq-aZ-iPn"/>
                         <outlet property="nextButton" destination="P4h-oo-eMe" id="NCx-uS-77k"/>
