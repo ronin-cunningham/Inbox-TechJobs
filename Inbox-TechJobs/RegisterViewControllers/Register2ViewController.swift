@@ -10,10 +10,8 @@ import UIKit
 import Firebase
 
 class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    
+
     @IBOutlet weak var _education: UITextField!
-    
-    
     @IBOutlet weak var _positionPicker: UIPickerView!
     
     @IBOutlet weak var _locationPicker: UIPickerView!
