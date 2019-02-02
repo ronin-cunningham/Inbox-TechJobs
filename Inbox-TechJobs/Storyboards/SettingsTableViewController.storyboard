@@ -197,7 +197,7 @@
                             <outlet property="delegate" destination="gmo-Ud-2YE" id="LVf-QF-KKC"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="icons8-settings-50" selectedImage="icons8-settings-50" id="bDe-PW-Qdd"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-settings-40" selectedImage="icons8-settings-40" id="bDe-PW-Qdd"/>
                     <navigationItem key="navigationItem" id="7uc-NR-1W7">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="hFh-sB-fQ7"/>
                     </navigationItem>
@@ -216,6 +216,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-settings-50" width="37.5" height="37.5"/>
+        <image name="icons8-settings-40" width="30" height="30"/>
     </resources>
 </document>
