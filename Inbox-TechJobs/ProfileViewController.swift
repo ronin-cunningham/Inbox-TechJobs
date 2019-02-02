@@ -12,12 +12,6 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     @IBOutlet var profilePicture: UIImageView!
     @IBOutlet weak var userImage: UIImageView!
     
-    @IBOutlet weak var subMenus: UITableView!
-    
-    @IBOutlet weak var educationCell: UITableViewCell!
-
-    @IBOutlet weak var positionCell: UITableViewCell!
-    
     @IBAction func importImage(_ sender: Any) {
         let image = UIImagePickerController()
         image.delegate = self
