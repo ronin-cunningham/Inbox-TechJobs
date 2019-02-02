@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Inbox-TechJobs/Storyboards/InboxSpecificUserViewController.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:Inbox-TechJobs/Storyboards/InboxTableViewController.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:Inbox-TechJobs/Storyboards/SettingsTableViewController.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:Inbox-TechJobs/Storyboards/FilterTableViewController.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:Inbox-TechJobs/Storyboards/ViewController.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:Inbox-TechJobs/Storyboards/EditProfile.storyboard">
+   </FileRef>
+   <FileRef
       location = "group:Inbox-TechJobs/Storyboards/Register3.storyboard">
    </FileRef>
    <FileRef
