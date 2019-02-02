@@ -27,9 +27,7 @@ class ViewController: UIViewController {
     @IBOutlet var cardImageView: UIImageView!
     
     @IBOutlet var yesnoImageView: UIImageView!
-    
-    override func viewWillAppear(_ animated: Bool) {
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
