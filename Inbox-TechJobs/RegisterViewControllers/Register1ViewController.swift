@@ -44,7 +44,6 @@ class Register1ViewController: UIViewController {
             if (password == reEnterPassword) {
                 Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                     //check that user is not nil
-                    
                     if user != nil {
                         //GO TO NEXT PAGE
                         self.performSegue(withIdentifier: "accountCreationNextSegue", sender: self)
