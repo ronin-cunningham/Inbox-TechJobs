@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 
 class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
@@ -31,12 +32,14 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBAction func nextButtonAction(_ sender: Any) {
         if let education = _education.text, let image = _userImage.image {
             
+            
+//          let currentUser = Auth.auth().currentUser
+//          let uid = currentUser?.uid
+            
             let ref = Database.database().reference()
-            let employeeRef = Database.database().reference().child("Employees")
+            let employeeRef = ref.child("Employees")
             
-            guard let employeeID = Auth.auth().currentUser?.uid else {return}
-            
-            employeeRef.child(employeeID).updateChildValues(["education": education])
+            employeeRef.child(uid!).updateChildValues(["education": education])
             
             uploadImageToFirebaseStorage(data: image)
         }

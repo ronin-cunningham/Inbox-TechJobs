@@ -33,7 +33,7 @@ class LoginViewController : UIViewController {
         let ref = Database.database().reference()
         let employeeRef = ref.child("Employees")
         
-        employeeRef.child("-LXhTxFdKae1ks0uJc8t").updateChildValues(["yeet": "yeet"])
+        employeeRef.child("MEquVUZgfJZyuDtzLhmTDmUYwlr1").updateChildValues(["yeet": "yeet"])
         
         
         Helper.instBackground(view1: self.view, bckgr: backgroundImage!, alph: 0.8)

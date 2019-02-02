@@ -34,7 +34,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         divisor = (view.frame.width/2)/0.61
         
-        
         card = "Sean Lee" //DATABASE
 
 

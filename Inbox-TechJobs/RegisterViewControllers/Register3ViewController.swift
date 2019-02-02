@@ -8,37 +8,40 @@
 
 import UIKit
 
-class Register3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+
+class Register3ViewController: UIViewController {
     
     
-    
-    let degrees = ["Computer Science", "Computer Engineering", "Software Engineering", "MBA"]
-    let travelDistance = ["10km", "20km", "30km", "40km", "50km"]
-    
+//
+//    let degrees = ["Computer Science", "Computer Engineering", "Software Engineering", "MBA"]
+//    let travelDistance = ["10km", "20km", "30km", "40km", "50km"]
+//
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-
-        return degrees.count
-
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return degrees[row]
-
-    }
-    
+//
+//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+//        return 1
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//
+//        return degrees.count
+//
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//        return degrees[row]
+//
+//    }
+//
     
     
     @IBAction func doneTapped(_ sender: UIButton) {
+        
+        
     }
     
     
