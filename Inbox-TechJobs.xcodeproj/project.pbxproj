@@ -22,11 +22,12 @@
 		11AFD4CF21FDE29000224AAC /* Register2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4CE21FDE29000224AAC /* Register2ViewController.swift */; };
 		11AFD4D121FDE2A300224AAC /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4D021FDE2A300224AAC /* Register1ViewController.swift */; };
 		11AFD4D321FDE2B100224AAC /* Register3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4D221FDE2B100224AAC /* Register3ViewController.swift */; };
+		11FB79B22205504F00A9CA7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11FB79B12205504F00A9CA7B /* GoogleService-Info.plist */; };
 		4DB1FCAB08D235C2D4E23F7A /* Pods_Inbox_TechJobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1621D69B1AC5DCD39CF0AFE5 /* Pods_Inbox_TechJobs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11A2A68121FD18C6004F0E96 /* Inbox-TechJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inbox-TechJobs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A2A68121FD18C6004F0E96 /* Inbox-TechJobsAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inbox-TechJobsAid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A2A68421FD18C6004F0E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A2A68621FD18C6004F0E96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11A2A68921FD18C6004F0E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		11AFD4CE21FDE29000224AAC /* Register2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register2ViewController.swift; sourceTree = "<group>"; };
 		11AFD4D021FDE2A300224AAC /* Register1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register1ViewController.swift; sourceTree = "<group>"; };
 		11AFD4D221FDE2B100224AAC /* Register3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register3ViewController.swift; sourceTree = "<group>"; };
+		11FB79B12205504F00A9CA7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1621D69B1AC5DCD39CF0AFE5 /* Pods_Inbox_TechJobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inbox_TechJobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A59669DE401E7A0B40E123 /* Pods-Inbox-TechJobs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inbox-TechJobs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inbox-TechJobs/Pods-Inbox-TechJobs.release.xcconfig"; sourceTree = "<group>"; };
 		9822D4A9C591B190938C3080 /* Pods-Inbox-TechJobs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inbox-TechJobs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inbox-TechJobs/Pods-Inbox-TechJobs.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		11A2A68221FD18C6004F0E96 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11A2A68121FD18C6004F0E96 /* Inbox-TechJobs.app */,
+				11A2A68121FD18C6004F0E96 /* Inbox-TechJobsAid.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +97,7 @@
 				11A2A69021FD18C7004F0E96 /* Info.plist */,
 				11AFD4C121FD76B400224AAC /* InboxTableViewController.swift */,
 				11AFD4C321FD7A8A00224AAC /* InboxSpecificUserViewController.swift */,
+				11FB79B12205504F00A9CA7B /* GoogleService-Info.plist */,
 			);
 			path = "Inbox-TechJobs";
 			sourceTree = "<group>";
@@ -129,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11A2A68021FD18C6004F0E96 /* Inbox-TechJobs */ = {
+		11A2A68021FD18C6004F0E96 /* Inbox-TechJobsAid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11A2A69321FD18C7004F0E96 /* Build configuration list for PBXNativeTarget "Inbox-TechJobs" */;
+			buildConfigurationList = 11A2A69321FD18C7004F0E96 /* Build configuration list for PBXNativeTarget "Inbox-TechJobsAid" */;
 			buildPhases = (
 				0F331AD6AB6A01153123306D /* [CP] Check Pods Manifest.lock */,
 				11A2A67D21FD18C6004F0E96 /* Sources */,
@@ -143,9 +146,9 @@
 			);
 			dependencies = (
 			);
-			name = "Inbox-TechJobs";
+			name = "Inbox-TechJobsAid";
 			productName = "Inbox-TechJobs";
-			productReference = 11A2A68121FD18C6004F0E96 /* Inbox-TechJobs.app */;
+			productReference = 11A2A68121FD18C6004F0E96 /* Inbox-TechJobsAid.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11A2A68021FD18C6004F0E96 /* Inbox-TechJobs */,
+				11A2A68021FD18C6004F0E96 /* Inbox-TechJobsAid */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A2A68F21FD18C7004F0E96 /* LaunchScreen.storyboard in Resources */,
+				11FB79B22205504F00A9CA7B /* GoogleService-Info.plist in Resources */,
 				11A2A68C21FD18C7004F0E96 /* Assets.xcassets in Resources */,
 				11A2A68A21FD18C6004F0E96 /* Main.storyboard in Resources */,
 			);
@@ -451,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11A2A69321FD18C7004F0E96 /* Build configuration list for PBXNativeTarget "Inbox-TechJobs" */ = {
+		11A2A69321FD18C7004F0E96 /* Build configuration list for PBXNativeTarget "Inbox-TechJobsAid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11A2A69421FD18C7004F0E96 /* Debug */,
