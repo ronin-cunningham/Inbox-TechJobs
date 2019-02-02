@@ -54,7 +54,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Languages" id="6Tr-2P-kF6">
+                            <tableViewSection headerTitle="Topics of Help" id="6Tr-2P-kF6">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wg1-UL-MvB">
                                         <rect key="frame" x="0.0" y="188" width="375" height="44"/>
@@ -82,7 +82,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Technologies" id="A8d-Gf-A1X">
+                            <tableViewSection headerTitle="Skills" id="A8d-Gf-A1X">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uIu-UA-Agc">
                                         <rect key="frame" x="0.0" y="348" width="375" height="44"/>

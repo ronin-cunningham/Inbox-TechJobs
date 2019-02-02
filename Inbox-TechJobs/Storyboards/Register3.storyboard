@@ -18,40 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl0-In-0aE">
-                                <rect key="frame" x="152" y="568" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="sdlkfjdskf"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl0-In-0aE">
+                                <rect key="frame" x="165" y="568" width="41" height="30"/>
+                                <state key="normal" title="Done!"/>
                                 <connections>
                                     <action selector="doneTapped:" destination="i1k-Fh-svw" eventType="touchUpInside" id="h3q-8w-qPt"/>
                                     <segue destination="CfH-Cr-adg" kind="show" id="Hgu-Cy-Mth"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help us find you matches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bv-EU-SJi">
-                                <rect key="frame" x="88" y="35" width="194" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help us find you matches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bv-EU-SJi">
+                                <rect key="frame" x="88" y="35.5" width="194" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZb-TT-btC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZb-TT-btC">
                                 <rect key="frame" x="16" y="22" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="d4a-ey-zCl" kind="show" id="7hJ-tM-h0v"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Availability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f3-op-qwf">
-                                <rect key="frame" x="145" y="77" width="81" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Availability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f3-op-qwf">
+                                <rect key="frame" x="145" y="77.5" width="81" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="d82-NS-XKZ">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="d82-NS-XKZ">
                                 <rect key="frame" x="104" y="125" width="166" height="331"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="SRY-pk-0et">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="331"/>
@@ -128,15 +123,37 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tell me about yourself" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="drI-WC-haO">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tell me about yourself" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="drI-WC-haO">
                                 <rect key="frame" x="36" y="509" width="302" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SLt-xf-gpj" firstAttribute="trailing" secondItem="2Bv-EU-SJi" secondAttribute="trailing" constant="93" id="6tY-O5-YtS"/>
+                            <constraint firstItem="2Bv-EU-SJi" firstAttribute="leading" secondItem="xZb-TT-btC" secondAttribute="trailing" constant="38" id="7Jp-We-9Eu"/>
+                            <constraint firstItem="2Bv-EU-SJi" firstAttribute="top" secondItem="SLt-xf-gpj" secondAttribute="top" constant="15.5" id="BdT-0n-0XT"/>
+                            <constraint firstItem="2Bv-EU-SJi" firstAttribute="leading" secondItem="xZb-TT-btC" secondAttribute="trailing" constant="38" id="DRe-0L-JnL"/>
+                            <constraint firstItem="xZb-TT-btC" firstAttribute="top" secondItem="SLt-xf-gpj" secondAttribute="top" constant="2" id="DrG-uz-7bo"/>
+                            <constraint firstItem="drI-WC-haO" firstAttribute="top" secondItem="xZb-TT-btC" secondAttribute="bottom" constant="457" id="ED0-nu-YiB"/>
+                            <constraint firstItem="drI-WC-haO" firstAttribute="top" secondItem="d82-NS-XKZ" secondAttribute="bottom" constant="53" id="EPu-8r-5Go"/>
+                            <constraint firstItem="drI-WC-haO" firstAttribute="top" secondItem="d82-NS-XKZ" secondAttribute="bottom" constant="53" id="GVw-I7-Raj"/>
+                            <constraint firstItem="drI-WC-haO" firstAttribute="leading" secondItem="SLt-xf-gpj" secondAttribute="leading" constant="36" id="IgK-Ji-iiD"/>
+                            <constraint firstItem="6f3-op-qwf" firstAttribute="leading" secondItem="SLt-xf-gpj" secondAttribute="leading" constant="145" id="KXx-Yh-hC2"/>
+                            <constraint firstItem="Xl0-In-0aE" firstAttribute="top" secondItem="drI-WC-haO" secondAttribute="bottom" constant="29" id="NV9-TM-JPS"/>
+                            <constraint firstItem="xZb-TT-btC" firstAttribute="leading" secondItem="SLt-xf-gpj" secondAttribute="leading" constant="16" id="OBX-ug-Lwz"/>
+                            <constraint firstItem="d82-NS-XKZ" firstAttribute="leading" secondItem="SLt-xf-gpj" secondAttribute="leading" constant="104" id="OiT-tC-jMP"/>
+                            <constraint firstItem="SLt-xf-gpj" firstAttribute="trailing" secondItem="drI-WC-haO" secondAttribute="trailing" constant="37" id="QeT-l2-bbc"/>
+                            <constraint firstItem="SLt-xf-gpj" firstAttribute="trailing" secondItem="6f3-op-qwf" secondAttribute="trailing" constant="149" id="T0S-D7-QkS"/>
+                            <constraint firstItem="6f3-op-qwf" firstAttribute="top" secondItem="2Bv-EU-SJi" secondAttribute="bottom" constant="21.5" id="UmT-7l-AYT"/>
+                            <constraint firstItem="Xl0-In-0aE" firstAttribute="leading" secondItem="SLt-xf-gpj" secondAttribute="leading" constant="165" id="Ydf-zq-CcI"/>
+                            <constraint firstItem="SLt-xf-gpj" firstAttribute="trailing" secondItem="Xl0-In-0aE" secondAttribute="trailing" constant="169" id="ijP-2s-OI2"/>
+                            <constraint firstItem="SLt-xf-gpj" firstAttribute="trailing" secondItem="d82-NS-XKZ" secondAttribute="trailing" constant="105" id="l5k-1r-Y67"/>
+                            <constraint firstItem="SLt-xf-gpj" firstAttribute="bottom" secondItem="Xl0-In-0aE" secondAttribute="bottom" constant="69" id="mEr-EF-3jL"/>
+                            <constraint firstItem="d82-NS-XKZ" firstAttribute="top" secondItem="6f3-op-qwf" secondAttribute="bottom" constant="27" id="npB-UO-wGQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SLt-xf-gpj"/>
                     </view>
                     <connections>
