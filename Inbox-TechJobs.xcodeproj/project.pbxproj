@@ -33,7 +33,6 @@
 		11AFD4D121FDE2A300224AAC /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4D021FDE2A300224AAC /* Register1ViewController.swift */; };
 		11AFD4D321FDE2B100224AAC /* Register3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFD4D221FDE2B100224AAC /* Register3ViewController.swift */; };
 		11FB79B22205504F00A9CA7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11FB79B12205504F00A9CA7B /* GoogleService-Info.plist */; };
-		1D23F95C22064F110032DFD7 /* Register25.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D23F95B22064F110032DFD7 /* Register25.storyboard */; };
 		4DB1FCAB08D235C2D4E23F7A /* Pods_Inbox_TechJobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1621D69B1AC5DCD39CF0AFE5 /* Pods_Inbox_TechJobs.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +66,6 @@
 		11AFD4D221FDE2B100224AAC /* Register3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register3ViewController.swift; sourceTree = "<group>"; };
 		11FB79B12205504F00A9CA7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1621D69B1AC5DCD39CF0AFE5 /* Pods_Inbox_TechJobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inbox_TechJobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D23F95B22064F110032DFD7 /* Register25.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register25.storyboard; sourceTree = "<group>"; };
 		62A59669DE401E7A0B40E123 /* Pods-Inbox-TechJobs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inbox-TechJobs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inbox-TechJobs/Pods-Inbox-TechJobs.release.xcconfig"; sourceTree = "<group>"; };
 		9822D4A9C591B190938C3080 /* Pods-Inbox-TechJobs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inbox-TechJobs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inbox-TechJobs/Pods-Inbox-TechJobs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,7 +95,6 @@
 				114E6BD52205A43200BFB6C6 /* InboxSpecificUserViewController.storyboard */,
 				114E6BD62205A43200BFB6C6 /* InboxTableViewController.storyboard */,
 				114E6BDB2206328B00BFB6C6 /* LoginViewController.storyboard */,
-				1D23F95B22064F110032DFD7 /* Register25.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -235,7 +232,6 @@
 				114E6BCA2205A2E500BFB6C6 /* EditProfile.storyboard in Resources */,
 				114E6BD92205A43200BFB6C6 /* InboxSpecificUserViewController.storyboard in Resources */,
 				114E6BDA2205A43200BFB6C6 /* InboxTableViewController.storyboard in Resources */,
-				1D23F95C22064F110032DFD7 /* Register25.storyboard in Resources */,
 				114E6BDC2206328B00BFB6C6 /* LoginViewController.storyboard in Resources */,
 				11A2A68F21FD18C7004F0E96 /* LaunchScreen.storyboard in Resources */,
 				11FB79B22205504F00A9CA7B /* GoogleService-Info.plist in Resources */,
@@ -467,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ANG88SK4JN;
+				DEVELOPMENT_TEAM = 23W6YX3LME;
 				INFOPLIST_FILE = "Inbox-TechJobs/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -487,7 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ANG88SK4JN;
+				DEVELOPMENT_TEAM = 23W6YX3LME;
 				INFOPLIST_FILE = "Inbox-TechJobs/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
