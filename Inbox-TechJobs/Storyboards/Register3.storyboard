@@ -23,6 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done!"/>
                                 <connections>
+                                    <action selector="doneTapped:" destination="i1k-Fh-svw" eventType="touchUpInside" id="h3q-8w-qPt"/>
                                     <segue destination="CfH-Cr-adg" kind="show" id="Hgu-Cy-Mth"/>
                                 </connections>
                             </button>
