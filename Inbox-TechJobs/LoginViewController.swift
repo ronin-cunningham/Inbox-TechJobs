@@ -7,12 +7,17 @@
 //
 
 import UIKit
-import Alamofire
+import Firebase
+import FirebaseAuth
+
 
 class LoginViewController : UIViewController {
     
+    @IBOutlet weak var _email: UITextField!
     
-    
+//    override func viewWillAppear(_ animated: Bool) {
+//        //PUT LISTENER
+//    }
     @IBOutlet var _username: UITextField!
     
     @IBOutlet var _password: UITextField!
@@ -43,6 +48,21 @@ class LoginViewController : UIViewController {
     }
     
     
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        //form validation on email and password
+        if let email = _email.text, let pass = _password.text {
+            Auth.auth().signIn(withEmail: email, link: pass) { (user, error) in
+                //check that user isn't nil
+                if let u = user {
+                    //User is found, go to home screen
+                } else {
+                    //ERROR: check error SHOW MESSAGE
+                }
+                
+            }
+        }
+        
+    }
     
     
 }

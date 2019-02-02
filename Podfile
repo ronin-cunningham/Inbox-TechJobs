@@ -7,8 +7,9 @@ target 'Inbox-TechJobs' do
 
   # Pods for Inbox-TechJobs
 
-  pod 'Alamofire', '~> 5.0.0.beta.1'
+#  pod 'Alamofire', '~> 5.0.0.beta.1'
 
   pod 'Firebase/Core'
-
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 end

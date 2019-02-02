@@ -105,7 +105,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdD-D5-kBy">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdD-D5-kBy">
                                 <rect key="frame" x="84" y="183" width="206" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -128,6 +128,7 @@
                                 </state>
                                 <connections>
                                     <action selector="LoginButton:" destination="icp-e0-XiN" eventType="touchUpInside" id="g7o-PP-syt"/>
+                                    <action selector="loginButtonTapped:" destination="icp-e0-XiN" eventType="touchUpInside" id="gCf-gt-Q0p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGN-4C-Rkh">
@@ -163,9 +164,10 @@
                         <viewLayoutGuide key="safeArea" id="wMP-fA-rA0"/>
                     </view>
                     <connections>
+                        <outlet property="_email" destination="fdD-D5-kBy" id="wab-MN-cya"/>
                         <outlet property="_login_button" destination="xNE-9s-eUC" id="SSs-vE-eUM"/>
                         <outlet property="_password" destination="6Ho-XG-cCP" id="PH7-0H-DdD"/>
-                        <outlet property="_username" destination="fdD-D5-kBy" id="XN0-tH-Igd"/>
+                        <segue destination="fV2-FW-8Pk" kind="show" identifier="goToHome" id="kuG-3d-ErV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndc-Eq-fot" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -985,9 +987,9 @@
         <image name="icons8-user-50" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7hJ-tM-h0v"/>
-        <segue reference="A4l-ex-sRF"/>
+        <segue reference="rqE-OB-NNw"/>
+        <segue reference="gTp-z8-cCy"/>
         <segue reference="2hK-UM-Aoa"/>
-        <segue reference="eDf-wr-ogq"/>
+        <segue reference="kuG-3d-ErV"/>
     </inferredMetricsTieBreakers>
 </document>
