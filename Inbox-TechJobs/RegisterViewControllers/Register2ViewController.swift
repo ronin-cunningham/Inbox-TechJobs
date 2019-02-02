@@ -31,7 +31,7 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
         if let education = _education.text {
             guard let employeeID = Auth.auth().currentUser?.uid else {return}
             
-            ref.childByAutoId().setValue(["education": education])
+            employeeRef.child("-LXhTxFdKae1ks0uJc8t").updateChildValues(["education": education])
         }
     }
     
