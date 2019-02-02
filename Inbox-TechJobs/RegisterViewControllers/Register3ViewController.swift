@@ -49,6 +49,10 @@ class Register3ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     }
     
     
+    @IBAction func doneTapped(_ sender: UIButton) {
+    }
+    
+    
     
 
     /*
