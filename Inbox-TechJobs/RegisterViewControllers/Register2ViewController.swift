@@ -10,9 +10,21 @@ import UIKit
 
 class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     @IBOutlet var label: UILabel!
-    @IBOutlet var pickerView: UIPickerView!
+    
+    @IBOutlet weak var education: UITextField!
+    @IBOutlet weak var departmentPicker: UIPickerView!
+    
+    @IBOutlet weak var positionPicker: UIPickerView!
+    
+    @IBOutlet weak var locationPicker: UIPickerView!
+    @IBOutlet weak var isMentor: UISwitch!
+    
+    @IBOutlet weak var nextButton: UIButton!
     
     @IBOutlet weak var userImage: UIImageView!
+    
+    @IBAction func nextButtonAction(_ sender: Any) {
+    }
     
     @IBAction func importImage(_ sender: Any) {
         let image = UIImagePickerController()
@@ -22,7 +34,7 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
         image.allowsEditing = false
         self.present(image, animated: true)
     }
-   
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             userImage.image = image
@@ -57,6 +69,9 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextButton.layer.cornerRadius = 10
+        nextButton.layer.masksToBounds = true
 
         // Do any additional setup after loading the view.
     }

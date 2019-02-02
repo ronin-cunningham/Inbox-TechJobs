@@ -59,7 +59,7 @@
                             <stackView opaque="NO" contentMode="top" ambiguous="YES" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D9e-3c-Dn4" userLabel="Other Fields">
                                 <rect key="frame" x="27" y="229" width="320" height="709"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Education" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-a7-1K3" userLabel="Education">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Education" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-a7-1K3" userLabel="education">
                                         <rect key="frame" x="85" y="0.0" width="150" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="S7W-Zx-avz"/>
@@ -68,17 +68,17 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81s-OB-48b" userLabel="DepartmentPicker">
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81s-OB-48b" userLabel="departmentPicker">
                                         <rect key="frame" x="0.0" y="30" width="320" height="216"/>
                                         <connections>
                                             <outlet property="dataSource" destination="zTa-t9-AbV" id="JHB-HN-f1u"/>
                                             <outlet property="delegate" destination="zTa-t9-AbV" id="x7q-w8-vEd"/>
                                         </connections>
                                     </pickerView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVt-GK-v95" userLabel="PositionPicker">
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVt-GK-v95" userLabel="positionPicker">
                                         <rect key="frame" x="0.0" y="246" width="320" height="216"/>
                                     </pickerView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylZ-aI-Zed" userLabel="LocationPicker">
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylZ-aI-Zed" userLabel="locationPicker">
                                         <rect key="frame" x="0.0" y="462" width="320" height="216"/>
                                     </pickerView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="nBV-MC-yQV">
@@ -92,6 +92,9 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CgN-cp-hhE" userLabel="isMentor">
                                                 <rect key="frame" x="190.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="isMentorAction:" destination="zTa-t9-AbV" eventType="valueChanged" id="WD1-A4-Sqp"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -104,10 +107,17 @@
                                     <constraint firstItem="ylZ-aI-Zed" firstAttribute="centerX" secondItem="D9e-3c-Dn4" secondAttribute="centerX" id="rlj-x6-jEM"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03s-Ib-hG0" userLabel="NextButton">
-                                <rect key="frame" x="171" y="581" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03s-Ib-hG0" userLabel="nextButton">
+                                <rect key="frame" x="127.5" y="581" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.015686274509803921" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="iAZ-d5-gQf"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
+                                    <action selector="nextButtonAction:" destination="zTa-t9-AbV" eventType="touchUpInside" id="WG9-dj-l2X"/>
                                     <segue destination="feq-Mj-bcu" kind="show" id="kLV-UA-k5A"/>
                                 </connections>
                             </button>
@@ -119,12 +129,18 @@
                             <constraint firstItem="tze-W7-Gnh" firstAttribute="centerX" secondItem="98a-Ag-z9Z" secondAttribute="centerX" id="Mp0-fL-Nm6"/>
                             <constraint firstItem="vPQ-GE-uWD" firstAttribute="centerX" secondItem="fnb-6m-DQR" secondAttribute="centerX" id="gUN-I5-gxt"/>
                             <constraint firstItem="D9e-3c-Dn4" firstAttribute="centerY" secondItem="fnb-6m-DQR" secondAttribute="centerY" constant="250" id="l3D-iM-nNe"/>
+                            <constraint firstItem="03s-Ib-hG0" firstAttribute="centerX" secondItem="fnb-6m-DQR" secondAttribute="centerX" id="o8R-C4-zDs"/>
                             <constraint firstItem="98a-Ag-z9Z" firstAttribute="bottom" secondItem="03s-Ib-hG0" secondAttribute="bottom" constant="56" id="un9-Gx-NLn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="98a-Ag-z9Z"/>
                     </view>
                     <connections>
+                        <outlet property="education" destination="Zfi-a7-1K3" id="Y1V-Iv-Ib4"/>
+                        <outlet property="isMentor" destination="CgN-cp-hhE" id="dge-un-z1d"/>
+                        <outlet property="locationPicker" destination="ylZ-aI-Zed" id="CLd-jq-CsM"/>
+                        <outlet property="nextButton" destination="03s-Ib-hG0" id="Uf0-pZ-sYw"/>
                         <outlet property="pickerView" destination="81s-OB-48b" id="hDZ-DN-E8u"/>
+                        <outlet property="positionPicker" destination="BVt-GK-v95" id="hXy-dM-vJH"/>
                         <outlet property="userImage" destination="mNB-Ff-1ck" id="pfy-jf-rRB"/>
                     </connections>
                 </viewController>
