@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -15,6 +17,7 @@ class ViewController: UIViewController {
     var card: String = ""
     var previewCard: String = ""
     
+    @IBOutlet weak var userTestLabel: UILabel!
     
     let cardImageArray = ["Sean Lee","Nicole Pitre"]
     
@@ -24,6 +27,9 @@ class ViewController: UIViewController {
     @IBOutlet var cardImageView: UIImageView!
     
     @IBOutlet var yesnoImageView: UIImageView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
