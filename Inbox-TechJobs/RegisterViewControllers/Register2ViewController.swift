@@ -15,9 +15,8 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBOutlet weak var _positionPicker: UIPickerView!
     
     @IBOutlet weak var _locationPicker: UIPickerView!
-    
+
     @IBOutlet weak var _isMentor: UISwitch!
-    
     @IBOutlet weak var nextButton: UIButton!
     
     @IBOutlet weak var _userImage: UIImageView!
