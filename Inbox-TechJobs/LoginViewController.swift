@@ -30,10 +30,10 @@ class LoginViewController : UIViewController {
         let backgroundImage = UIImage.init(named: "background")
         let blackImage = UIImage.init(named: "black")
         
-        let ref = Database.database().reference()
-        let employeeRef = ref.child("Employees")
-        
-        employeeRef.child("MEquVUZgfJZyuDtzLhmTDmUYwlr1").updateChildValues(["yeet": "yeet"])
+//        let ref = Database.database().reference()
+//        let employeeRef = ref.child("Employees")
+//        
+//        employeeRef.child("MEquVUZgfJZyuDtzLhmTDmUYwlr1").updateChildValues(["yeet": "yeet"])
         
         
         Helper.instBackground(view1: self.view, bckgr: backgroundImage!, alph: 0.8)
