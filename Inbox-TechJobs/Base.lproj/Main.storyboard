@@ -89,7 +89,7 @@
                     <connections>
                         <outlet property="_email" destination="fdD-D5-kBy" id="wab-MN-cya"/>
                         <outlet property="_password" destination="6Ho-XG-cCP" id="PH7-0H-DdD"/>
-                        <segue destination="fV2-FW-8Pk" kind="show" identifier="goToHome" id="kuG-3d-ErV"/>
+                        <segue destination="fV2-FW-8Pk" kind="show" identifier="goToHome" id="cyt-aA-Nth"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndc-Eq-fot" userLabel="First Responder" sceneMemberID="firstResponder"/>
