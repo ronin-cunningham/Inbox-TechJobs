@@ -9,6 +9,6 @@ target 'Inbox-TechJobs' do
 
   pod 'Alamofire', '~> 5.0.0.beta.1'
 
-  
+  pod 'Firebase/Core'
 
 end
