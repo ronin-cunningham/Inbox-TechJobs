@@ -27,7 +27,7 @@ class Register1ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    let ref = Database.database().reference().child("Employees")
     /*
     // MARK: - Navigation
 
@@ -40,8 +40,9 @@ class Register1ViewController: UIViewController {
     
     //REGISTERS USER IN FIREBASE AUTH EMAIL AND LOGIN
     @IBAction func nextTapped(_ sender: UIButton) {
-        if let email = _email.text, let password = _password.text, let reEnterPassword = _reEnterPassword.text {
+        if let email = _email.text, let password = _password.text, let firstName = _firstName.text, let lastName = _lastName.text, let reEnterPassword = _reEnterPassword.text {
             if (password == reEnterPassword) {
+                ref.childByAutoId().setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
                 Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                     //check that user is not nil
                     
