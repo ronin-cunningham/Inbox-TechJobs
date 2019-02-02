@@ -115,7 +115,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wov-NK-ucR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="icons8-male-user-40" id="OlJ-uJ-4Ii"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="icons8-new-post-40" id="OlJ-uJ-4Ii"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Edit profile" id="9Xo-P3-BCy">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="kug-Z8-yCE"/>
@@ -133,7 +133,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-male-user-40" width="30" height="30"/>
+        <image name="icons8-new-post-40" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="92N-LA-baD"/>
