@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Inbox-TechJobs/Storyboards/Register3.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:Inbox-TechJobs/Storyboards/Register2.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:Inbox-TechJobs/Storyboards/Register1.storyboard">
+   </FileRef>
+   <FileRef
       location = "group:/Users/ronincunningham/Documents/Inbox-TechJobs/Inbox-TechJobs.xcodeproj">
    </FileRef>
    <FileRef
