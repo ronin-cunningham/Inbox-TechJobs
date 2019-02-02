@@ -62,11 +62,16 @@ class LoginViewController : UIViewController {
         if let email = _email.text, let pass = _password.text {
             Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
                 //check that user isn't nil
-                if user != nil {
-                    self.performSegue(withIdentifier: "goToHome", sender: self)
-                } else {
-                    //ERROR: check error SHOW MESSAGE
+                if user == nil {
+                    //THROW ERROR
                 }
+                
+                //KEEP HERE FOR LEGACY PURPOSES
+//                if user != nil {
+//                    self.performSegue(withIdentifier: "goToHome", sender: self)
+//                } else {
+//                    //ERROR: check error SHOW MESSAGE
+//                }
                 
             }
         }

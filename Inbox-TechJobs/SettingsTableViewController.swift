@@ -91,6 +91,5 @@ class SettingsTableViewController: UITableViewController {
 
     @IBAction func handleLogout(_ sender: UIButton) {
         try! Auth.auth().signOut()
-        self.dismiss(animated: false, completion: nil)
     }
 }
