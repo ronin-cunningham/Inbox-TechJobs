@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class Register1ViewController: UIViewController {
 
+    @IBOutlet weak var _email: UITextField!
+    
+    @IBOutlet weak var _password: UITextField!
+    @IBOutlet weak var _reEnterPassword: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +34,23 @@ class Register1ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    //REGISTERS USER IN FIREBASE AUTH EMAIL AND LOGIN
+    @IBAction func nextTapped(_ sender: UIButton) {
+        if let email = _email.text, let password = _password.text, let reEnterPassword = _reEnterPassword.text {
+            if (password == reEnterPassword) {
+                Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+                    //check that user is not nil
+                    
+                    if user != nil {
+                        //GO TO NEXT PAGE
+                        self.performSegue(withIdentifier: "accountCreationNextSegue", sender: self)
+                    } else {
+                        //THROW ERROR
+                    }
+                }
+            }
+        }
+    }
+    
 }
