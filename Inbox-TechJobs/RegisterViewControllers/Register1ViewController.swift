@@ -12,11 +12,11 @@ import FirebaseAuth
 
 class Register1ViewController: UIViewController {
 
+    @IBOutlet weak var _firstName: UITextField!
+    @IBOutlet weak var _lastName: UITextField!
     @IBOutlet weak var _email: UITextField!
-    
     @IBOutlet weak var _password: UITextField!
     @IBOutlet weak var _reEnterPassword: UITextField!
-    
     @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
