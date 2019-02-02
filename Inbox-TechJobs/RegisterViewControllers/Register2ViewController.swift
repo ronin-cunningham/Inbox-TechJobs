@@ -12,16 +12,19 @@ import Firebase
 
 class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    @IBOutlet weak var _userImage: UIImageView!
+    
     @IBOutlet weak var _education: UITextField!
     @IBOutlet weak var _positionPicker: UIPickerView!
     
     @IBOutlet weak var _locationPicker: UIPickerView!
     
-    @IBOutlet weak var _isMentor: UISwitch!
+
     
+    @IBOutlet weak var _isMentor: UISwitch!
     @IBOutlet weak var nextButton: UIButton!
     
-    @IBOutlet weak var _userImage: UIImageView!
+
     
     let ref = Database.database().reference()
     let employeeRef = Database.database().reference().child("Employees")

@@ -20,16 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         let authListener = Auth.auth().addStateDidChangeListener { (auth, user) in
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if user != nil {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let controller = storyboard.instantiateViewController(withIdentifier: "UITabBarController-fV2-FW-8Pk") as! UITabBarController
                 self.window?.rootViewController = controller
                 self.window?.makeKeyAndVisible()
                 //show screen
             } else {
                 //menu screen
-                
+                let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "UIViewController-icp-e0-XiN")
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
             }
         }
         return true
