@@ -56,6 +56,8 @@ class Register1ViewController: UIViewController {
                     }
                     
                 }
+                
+            
                 guard let employeeID = Auth.auth().currentUser?.uid else {return}
                 
                 print(employeeID)
