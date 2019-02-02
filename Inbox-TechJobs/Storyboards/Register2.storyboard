@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="left" fixedFrame="YES" distribution="equalSpacing" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="DUV-Jp-aef" userLabel="Top Bar">
-                                <rect key="frame" x="16" y="20" width="285" height="30"/>
+                            <stackView opaque="NO" contentMode="left" fixedFrame="YES" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="DUV-Jp-aef" userLabel="Top Bar">
+                                <rect key="frame" x="16" y="20" width="264" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZA3-RS-QrW" userLabel="BackButton">
@@ -30,7 +30,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help us find you matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tze-W7-Gnh">
-                                        <rect key="frame" x="91" y="0.0" width="194" height="30"/>
+                                        <rect key="frame" x="70" y="0.0" width="194" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -56,8 +56,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D9e-3c-Dn4" userLabel="Other Fields">
-                                <rect key="frame" x="27" y="224" width="320" height="709"/>
+                            <stackView opaque="NO" contentMode="top" ambiguous="YES" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D9e-3c-Dn4" userLabel="Other Fields">
+                                <rect key="frame" x="27" y="229" width="320" height="709"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Education" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-a7-1K3" userLabel="Education">
                                         <rect key="frame" x="85" y="0.0" width="150" height="30"/>
@@ -102,9 +102,8 @@
                                     <constraint firstItem="Zfi-a7-1K3" firstAttribute="centerX" secondItem="D9e-3c-Dn4" secondAttribute="centerX" id="n1x-Du-kKA"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03s-Ib-hG0" userLabel="NextButton">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03s-Ib-hG0" userLabel="NextButton">
                                 <rect key="frame" x="171" y="581" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="feq-Mj-bcu" kind="show" id="kLV-UA-k5A"/>
@@ -113,7 +112,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="tze-W7-Gnh" firstAttribute="centerX" secondItem="98a-Ag-z9Z" secondAttribute="centerX" id="L9M-a0-0Ox"/>
+                            <constraint firstItem="tze-W7-Gnh" firstAttribute="centerX" secondItem="98a-Ag-z9Z" secondAttribute="centerX" id="Mp0-fL-Nm6"/>
                             <constraint firstItem="vPQ-GE-uWD" firstAttribute="centerX" secondItem="fnb-6m-DQR" secondAttribute="centerX" id="gUN-I5-gxt"/>
+                            <constraint firstItem="D9e-3c-Dn4" firstAttribute="centerY" secondItem="fnb-6m-DQR" secondAttribute="centerY" constant="250" id="l3D-iM-nNe"/>
+                            <constraint firstItem="98a-Ag-z9Z" firstAttribute="bottom" secondItem="03s-Ib-hG0" secondAttribute="bottom" constant="56" id="un9-Gx-NLn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="98a-Ag-z9Z"/>
                     </view>
