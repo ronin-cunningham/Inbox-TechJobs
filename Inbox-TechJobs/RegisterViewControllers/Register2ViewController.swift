@@ -24,11 +24,12 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     @IBOutlet weak var _userImage: UIImageView!
     
-    let ref = Database.database().reference().child("Employees")
+    let ref = Database.database().reference()
+    let employeeRef = Database.database().reference().child("Employees")
     
     @IBAction func nextButtonAction(_ sender: Any) {
         if let education = _education.text {
-            
+            guard let employeeID = Auth.auth().currentUser?.uid else {return}
             
             ref.childByAutoId().setValue(["education": education])
         }
