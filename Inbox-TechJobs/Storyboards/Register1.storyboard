@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DG-CW-l8v">
-                                <rect key="frame" x="160" y="34" width="64" height="21"/>
+                                <rect key="frame" x="160" y="48.5" width="64" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,8 +32,8 @@
                                     <segue destination="uyB-GB-8B7" kind="show" id="2hK-UM-Aoa"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="6N3-XZ-epj">
-                                <rect key="frame" x="116" y="133" width="143" height="290"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="6N3-XZ-epj">
+                                <rect key="frame" x="116" y="149" width="143" height="290"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSc-EN-iyK">
                                         <rect key="frame" x="0.0" y="0.0" width="143" height="30"/>
@@ -87,10 +87,11 @@
                         <constraints>
                             <constraint firstItem="6N3-XZ-epj" firstAttribute="leading" secondItem="7qf-Cx-VoY" secondAttribute="leading" constant="116" id="1iF-qD-FtB"/>
                             <constraint firstItem="7qf-Cx-VoY" firstAttribute="trailing" secondItem="6N3-XZ-epj" secondAttribute="trailing" constant="116" id="GQc-Lb-uk1"/>
+                            <constraint firstItem="P4h-oo-eMe" firstAttribute="top" secondItem="6N3-XZ-epj" secondAttribute="bottom" constant="50" id="I4R-45-VBN"/>
                             <constraint firstItem="P4h-oo-eMe" firstAttribute="leading" secondItem="7qf-Cx-VoY" secondAttribute="leading" constant="127" id="WK8-Ts-tM0"/>
                             <constraint firstItem="7qf-Cx-VoY" firstAttribute="bottom" secondItem="P4h-oo-eMe" secondAttribute="bottom" constant="148" id="Wuo-2P-VwO"/>
+                            <constraint firstItem="6N3-XZ-epj" firstAttribute="top" secondItem="2DG-CW-l8v" secondAttribute="bottom" constant="80" id="X2z-tF-Cwj"/>
                             <constraint firstItem="7qf-Cx-VoY" firstAttribute="trailing" secondItem="P4h-oo-eMe" secondAttribute="trailing" constant="128" id="Zh7-bu-bnF"/>
-                            <constraint firstItem="6N3-XZ-epj" firstAttribute="top" secondItem="2DG-CW-l8v" secondAttribute="bottom" constant="300" id="qAR-B1-fcZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7qf-Cx-VoY"/>
                     </view>
