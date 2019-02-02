@@ -34,8 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.window?.rootViewController = controller
                 self.window?.makeKeyAndVisible()
             }
+            
+            
         }
-        
         
         return true
     }
