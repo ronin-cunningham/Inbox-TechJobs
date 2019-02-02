@@ -54,7 +54,7 @@ class LoginViewController : UIViewController {
     
     @IBAction func loginTapped(_ sender: UIButton) {
         if let email = _email.text, let pass = _password.text {
-            Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+            Auth.auth().signIn(withEmail: "rcunningham@gmail.com", password: "azizamerican") { (user, error) in
                 //check that user isn't nil
                 if user != nil {
                     self.shouldPerformSegue(withIdentifier: "goToHome", sender: self)
