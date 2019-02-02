@@ -18,10 +18,11 @@ class Register1ViewController: UIViewController {
     @IBOutlet weak var _password: UITextField!
     @IBOutlet weak var _reEnterPassword: UITextField!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var errorMessage: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        errorMessage.isHidden = true
         nextButton.layer.cornerRadius = 10
         nextButton.layer.masksToBounds = true
         // Do any additional setup after loading the view.
@@ -41,19 +42,31 @@ class Register1ViewController: UIViewController {
     //REGISTERS USER IN FIREBASE AUTH EMAIL AND LOGIN
     @IBAction func nextTapped(_ sender: UIButton) {
         if let email = _email.text, let password = _password.text, let firstName = _firstName.text, let lastName = _lastName.text, let reEnterPassword = _reEnterPassword.text {
+            print(email)
             if (password == reEnterPassword) {
-                ref.childByAutoId().setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
+                
                 Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                     //check that user is not nil
                     if user != nil {
                         //GO TO NEXT PAGE
                         self.performSegue(withIdentifier: "accountCreationNextSegue", sender: self)
                     } else {
-                        //THROW ERROR
+                        self.errorMessage.isHidden = true
                     }
+                    
                 }
+                ref.childByAutoId().setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
             }
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //dismisses keyboard
+        _email.resignFirstResponder()
+        _password.resignFirstResponder()
+        _firstName.resignFirstResponder()
+        _lastName.resignFirstResponder()
+        _reEnterPassword.resignFirstResponder()
     }
     
 }

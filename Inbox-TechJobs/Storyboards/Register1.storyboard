@@ -57,13 +57,13 @@
                                         <rect key="frame" x="0.0" y="195" width="143" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BWE-Lv-hCb">
                                         <rect key="frame" x="0.0" y="260" width="143" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -82,6 +82,13 @@
                                     <action selector="nextTapped:" destination="ncL-gy-doU" eventType="touchUpInside" id="bv8-bu-qGM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Whoops! Check if everything entered correctly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCO-R4-dBN">
+                                <rect key="frame" x="75" y="92" width="234" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -101,6 +108,7 @@
                         <outlet property="_lastName" destination="ZkV-Mg-idP" id="7yk-Ic-fR1"/>
                         <outlet property="_password" destination="tXa-Eh-NpO" id="Qv9-P2-06D"/>
                         <outlet property="_reEnterPassword" destination="BWE-Lv-hCb" id="JQq-aZ-iPn"/>
+                        <outlet property="errorMessage" destination="YCO-R4-dBN" id="wbQ-Gz-cIF"/>
                         <outlet property="nextButton" destination="P4h-oo-eMe" id="NCx-uS-77k"/>
                         <segue destination="gUe-R1-92Y" kind="show" identifier="accountCreationNextSegue" id="5Mg-aK-VBB"/>
                     </connections>
