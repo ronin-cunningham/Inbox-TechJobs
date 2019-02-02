@@ -96,9 +96,6 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     
-    
-    
-    
     /*
     // MARK: - Navigation
 
