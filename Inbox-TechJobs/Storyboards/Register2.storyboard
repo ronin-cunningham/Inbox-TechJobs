@@ -37,8 +37,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vPQ-GE-uWD" userLabel="Photo">
-                                <rect key="frame" x="123" y="58" width="128" height="158"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vPQ-GE-uWD" userLabel="Photo">
+                                <rect key="frame" x="123.5" y="58" width="128" height="158"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mNB-Ff-1ck">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -100,6 +100,8 @@
                                     <constraint firstItem="81s-OB-48b" firstAttribute="centerX" secondItem="D9e-3c-Dn4" secondAttribute="centerX" id="Q5e-id-cfd"/>
                                     <constraint firstItem="nBV-MC-yQV" firstAttribute="centerX" secondItem="D9e-3c-Dn4" secondAttribute="centerX" id="fU2-ya-82f"/>
                                     <constraint firstItem="Zfi-a7-1K3" firstAttribute="centerX" secondItem="D9e-3c-Dn4" secondAttribute="centerX" id="n1x-Du-kKA"/>
+                                    <constraint firstItem="BVt-GK-v95" firstAttribute="centerX" secondItem="D9e-3c-Dn4" secondAttribute="centerX" id="n7i-t7-qUO"/>
+                                    <constraint firstItem="ylZ-aI-Zed" firstAttribute="centerX" secondItem="D9e-3c-Dn4" secondAttribute="centerX" id="rlj-x6-jEM"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03s-Ib-hG0" userLabel="NextButton">
@@ -112,6 +114,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="D9e-3c-Dn4" firstAttribute="top" secondItem="vPQ-GE-uWD" secondAttribute="bottom" constant="13" id="67N-CJ-v4l"/>
                             <constraint firstItem="tze-W7-Gnh" firstAttribute="centerX" secondItem="98a-Ag-z9Z" secondAttribute="centerX" id="L9M-a0-0Ox"/>
                             <constraint firstItem="tze-W7-Gnh" firstAttribute="centerX" secondItem="98a-Ag-z9Z" secondAttribute="centerX" id="Mp0-fL-Nm6"/>
                             <constraint firstItem="vPQ-GE-uWD" firstAttribute="centerX" secondItem="fnb-6m-DQR" secondAttribute="centerX" id="gUN-I5-gxt"/>
