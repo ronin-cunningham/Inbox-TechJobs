@@ -18,24 +18,12 @@ class LoginViewController : UIViewController {
 //    override func viewWillAppear(_ animated: Bool) {
 //        //PUT LISTENER
 //    }
-    @IBOutlet var _username: UITextField!
+//    @IBOutlet var _username: UITextField!
     
     @IBOutlet var _password: UITextField!
     
-    @IBOutlet var _login_button: UIButton!
-    
-    
-    @IBAction func LoginButton(_ sender: Any) {
-        let username = _username.text
-        let password = _password.text
-        
-        
-        if (username == "" || password == "") {
-            return
-        }
-        
-   
-    }
+//    @IBOutlet var _login_button: UIButton!
+
     
     override func viewDidLoad() {
         //LOAD BACKGROUND
@@ -48,21 +36,34 @@ class LoginViewController : UIViewController {
     }
     
     
-    @IBAction func loginButtonTapped(_ sender: Any) {
-        //form validation on email and password
+//    @IBAction func loginButtonTapped(_ sender: Any) {
+//        //form validation on email and password
+//        if let email = _email.text, let pass = _password.text {
+//            Auth.auth().signIn(withEmail: email, link: pass) { (user, error) in
+//                //check that user isn't nil
+//                if let u = user {
+//                    self.shouldPerformSegue(withIdentifier: "goToHome", sender: self)
+//                } else {
+//                    //ERROR: check error SHOW MESSAGE
+//                }
+//
+//            }
+//        }
+//
+//    }
+    
+    @IBAction func loginTapped(_ sender: UIButton) {
         if let email = _email.text, let pass = _password.text {
-            Auth.auth().signIn(withEmail: email, link: pass) { (user, error) in
+            Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
                 //check that user isn't nil
                 if let u = user {
-                    //User is found, go to home screen
+                    self.shouldPerformSegue(withIdentifier: "goToHome", sender: self)
                 } else {
                     //ERROR: check error SHOW MESSAGE
                 }
                 
             }
         }
-        
     }
-    
     
 }

@@ -127,20 +127,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="LoginButton:" destination="icp-e0-XiN" eventType="touchUpInside" id="g7o-PP-syt"/>
-                                    <action selector="loginButtonTapped:" destination="icp-e0-XiN" eventType="touchUpInside" id="gCf-gt-Q0p"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGN-4C-Rkh">
-                                <rect key="frame" x="147" y="563" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="LoginButton:" destination="icp-e0-XiN" eventType="touchUpInside" id="Rpt-cs-qaE"/>
-                                    <segue destination="fV2-FW-8Pk" kind="show" id="wXV-bg-0nD"/>
+                                    <action selector="loginTapped:" destination="icp-e0-XiN" eventType="touchUpInside" id="hrO-Kg-Kyf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inbox - Tech Jobs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doO-II-zpb">
@@ -165,7 +152,6 @@
                     </view>
                     <connections>
                         <outlet property="_email" destination="fdD-D5-kBy" id="wab-MN-cya"/>
-                        <outlet property="_login_button" destination="xNE-9s-eUC" id="SSs-vE-eUM"/>
                         <outlet property="_password" destination="6Ho-XG-cCP" id="PH7-0H-DdD"/>
                         <segue destination="fV2-FW-8Pk" kind="show" identifier="goToHome" id="kuG-3d-ErV"/>
                     </connections>
