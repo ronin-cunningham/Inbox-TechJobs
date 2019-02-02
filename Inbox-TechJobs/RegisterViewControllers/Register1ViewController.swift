@@ -28,7 +28,7 @@ class Register1ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    let ref = Database.database().reference().child("Employees")
+    let ref = Database.database().reference()
     /*
     // MARK: - Navigation
 
