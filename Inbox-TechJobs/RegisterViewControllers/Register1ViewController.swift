@@ -17,10 +17,13 @@ class Register1ViewController: UIViewController {
     @IBOutlet weak var _password: UITextField!
     @IBOutlet weak var _reEnterPassword: UITextField!
     
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        nextButton.layer.cornerRadius = 10
+        nextButton.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
     
