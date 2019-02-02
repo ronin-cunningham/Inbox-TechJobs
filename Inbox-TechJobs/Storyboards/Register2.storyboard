@@ -145,9 +145,9 @@
                         <viewLayoutGuide key="safeArea" id="98a-Ag-z9Z"/>
                     </view>
                     <connections>
+                        <outlet property="_education" destination="Zfi-a7-1K3" id="WOm-yy-TUX"/>
                         <outlet property="_locationPicker" destination="ylZ-aI-Zed" id="5jA-0y-fmF"/>
                         <outlet property="_positionPicker" destination="BVt-GK-v95" id="eTE-At-t3d"/>
-                        <outlet property="education" destination="Zfi-a7-1K3" id="Y1V-Iv-Ib4"/>
                         <outlet property="isMentor" destination="CgN-cp-hhE" id="dge-un-z1d"/>
                         <outlet property="locationPicker" destination="ylZ-aI-Zed" id="CLd-jq-CsM"/>
                         <outlet property="nextButton" destination="03s-Ib-hG0" id="Uf0-pZ-sYw"/>
