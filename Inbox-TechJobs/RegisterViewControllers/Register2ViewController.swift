@@ -26,12 +26,14 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
 
     
-    let ref = Database.database().reference()
-    let employeeRef = Database.database().reference().child("Employees")
     
     
     @IBAction func nextButtonAction(_ sender: Any) {
         if let education = _education.text, let image = _userImage.image {
+            
+            let ref = Database.database().reference()
+            let employeeRef = Database.database().reference().child("Employees")
+            
             guard let employeeID = Auth.auth().currentUser?.uid else {return}
             
             employeeRef.child(employeeID).updateChildValues(["education": education])
@@ -94,9 +96,6 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
 
         // Do any additional setup after loading the view.
     }
-    
-    
-    
     
     
     /*
