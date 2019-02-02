@@ -56,7 +56,8 @@ class Register1ViewController: UIViewController {
                     }
                     
                 }
-                ref.childByAutoId().setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
+                guard let employeeID = Auth.auth().currentUser?.uid else {return}
+                ref.child("Employees/" + employeeID).setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
             }
         }
     }
