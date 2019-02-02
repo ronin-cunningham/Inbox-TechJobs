@@ -73,7 +73,7 @@
                                 <rect key="frame" x="127" y="489" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.017548669817216256" green="0.13515608929903644" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Nextt">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
