@@ -24,9 +24,6 @@ class LoginViewController : UIViewController {
     
 //    @IBOutlet var _login_button: UIButton!
 
-    override func viewDidAppear(_ animated: Bool) {
-         performSegue(withIdentifier: "goToHome", sender: self)
-    }
     
     override func viewDidLoad() {
         //LOAD BACKGROUND
