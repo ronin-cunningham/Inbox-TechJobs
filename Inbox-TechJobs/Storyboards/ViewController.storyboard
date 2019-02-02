@@ -18,14 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPy-9v-RM9">
-                                <rect key="frame" x="317" y="20" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Filters"/>
-                                <connections>
-                                    <segue destination="10t-SW-sgm" kind="show" id="jJE-pc-jNB"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7PG-vF-2Sb" userLabel="previewCard">
                                 <rect key="frame" x="23" y="53" width="314" height="418"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -70,15 +62,23 @@
                                     <outletCollection property="gestureRecognizers" destination="eM7-C4-Jpe" appends="YES" id="NLz-cb-yFt"/>
                                 </connections>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx2-QI-1Tg">
-                                <rect key="frame" x="111" y="626" width="138" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPy-9v-RM9">
+                                <rect key="frame" x="309" y="20" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="9qM-TB-prG"/>
+                                    <constraint firstAttribute="height" constant="30" id="DlY-vz-be0"/>
+                                </constraints>
+                                <state key="normal" title="Filters"/>
+                                <connections>
+                                    <segue destination="10t-SW-sgm" kind="show" id="jJE-pc-jNB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hPy-9v-RM9" secondAttribute="trailing" constant="24" id="S0c-4K-usy"/>
+                            <constraint firstItem="hPy-9v-RM9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sk6-3m-1a2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icons8-job-seeker-50" id="JAw-Px-nl2"/>
@@ -86,7 +86,6 @@
                         <outlet property="cardImageView" destination="7vN-lH-qoa" id="ylO-Xz-fMA"/>
                         <outlet property="cardView" destination="td7-LT-VLQ" id="L8f-ix-R4N"/>
                         <outlet property="previewCardImageView" destination="7PG-vF-2Sb" id="hkp-gV-Nif"/>
-                        <outlet property="userTestLabel" destination="kx2-QI-1Tg" id="isw-nF-EUk"/>
                         <outlet property="yesnoImageView" destination="wFy-hk-hdv" id="HIS-ZD-ajP"/>
                     </connections>
                 </viewController>
@@ -109,6 +108,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-job-seeker-50" width="37.5" height="37.5"/>
+        <image name="icons8-job-seeker-50" width="50" height="50"/>
     </resources>
 </document>
