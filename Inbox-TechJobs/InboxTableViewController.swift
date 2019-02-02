@@ -9,8 +9,6 @@
 import UIKit
 import Firebase
 
-let ref = Database.database().reference()
-let employeeRef = ref.child("Employees")
 
 
 
@@ -24,6 +22,20 @@ class InboxTableViewController: UITableViewController {
 
 
     // MARK: - Table view data source
+    func handleUpdatingBios() {
+        let ref = Database.database().reference()
+        let employeeRef = ref.child("Employees")
+        
+        employeeRef.child(uid!).observeSingleEvent(of: .value) { (snapshot) in
+            if let bioData = snapshot.value as? [String:Any] {
+                let firstName = bioData["firstName"] as? String ?? ""
+                let lastName = bioData["lastName"] as? String ?? ""
+                connectedUsers.append(firstName)
+                connectedUsers.append(lastName)
+            }
+        }
+        
+    }
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
