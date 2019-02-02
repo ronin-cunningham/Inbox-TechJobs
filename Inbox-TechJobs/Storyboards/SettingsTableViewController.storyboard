@@ -17,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Prc-4J-k1b">
+                            <rect key="frame" x="0.0" y="392" width="375" height="259"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <sections>
                             <tableViewSection headerTitle="Change email" id="PTn-oa-6zd">
                                 <cells>
@@ -144,7 +148,7 @@
                                                     </constraints>
                                                     <state key="normal" title="Logout"/>
                                                     <connections>
-                                                        <segue destination="m1M-Zm-qcu" kind="show" id="wYK-lk-B2p"/>
+                                                        <action selector="handleLogout:" destination="gmo-Ud-2YE" eventType="touchUpInside" id="17E-TM-stt"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
