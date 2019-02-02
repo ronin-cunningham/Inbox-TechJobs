@@ -52,7 +52,13 @@ class Register1ViewController: UIViewController {
                     //check that user is not nil
                     if user != nil {
                         //GO TO NEXT PAGE
+                        let currentUser = Auth.auth().currentUser
+                        let uid = currentUser?.uid
                         
+                        let ref = Database.database().reference()
+                        let employeeRef = ref.child("Employees")
+                        
+                        employeeRef.child(uid!).setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
                         
                             self.performSegue(withIdentifier: "accountCreationNextSegue", sender: self)
                     } else {
@@ -61,11 +67,8 @@ class Register1ViewController: UIViewController {
                     
                 }
                 
-                let ref = Database.database().reference()
-                let employeeRef = ref.child("Employees")
-                guard let employeeID = Auth.auth().currentUser?.uid else {return}
+                //guard let employeeID = Auth.auth().currentUser?.uid else {return}
                 
-                employeeRef.childByAutoId().setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
             }
         }
     }
