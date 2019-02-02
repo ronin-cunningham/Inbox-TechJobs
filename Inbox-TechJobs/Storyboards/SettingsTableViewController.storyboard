@@ -148,7 +148,7 @@
                                                     </constraints>
                                                     <state key="normal" title="Logout"/>
                                                     <connections>
-                                                        <segue destination="m1M-Zm-qcu" kind="show" id="wYK-lk-B2p"/>
+                                                        <action selector="handleLogout:" destination="gmo-Ud-2YE" eventType="touchUpInside" id="17E-TM-stt"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
