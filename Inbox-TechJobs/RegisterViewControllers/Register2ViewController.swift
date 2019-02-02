@@ -30,7 +30,7 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
         if let education = _education.text {
             
             
-            ref.childByAutoId().setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
+            ref.childByAutoId().setValue(["education": education])
         }
     }
     
