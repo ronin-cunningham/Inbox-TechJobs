@@ -9,10 +9,23 @@
 import UIKit
 
 class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    @IBOutlet var label: UILabel!
-    @IBOutlet var pickerView: UIPickerView!
+    
+    @IBOutlet weak var education: UITextField!
+    
+    @IBOutlet weak var departmentPicker: UIPickerView!
+    
+    @IBOutlet weak var positionPicker: UIPickerView!
+    
+    @IBOutlet weak var locationPicker: UIPickerView!
+    
+    @IBOutlet weak var isMentor: UISwitch!
+    
+    @IBOutlet weak var nextButton: UIButton!
     
     @IBOutlet weak var userImage: UIImageView!
+    
+    @IBAction func nextButtonAction(_ sender: Any) {
+    }
     
     @IBAction func importImage(_ sender: Any) {
         let image = UIImagePickerController()
@@ -22,7 +35,7 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
         image.allowsEditing = false
         self.present(image, animated: true)
     }
-   
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             userImage.image = image
@@ -36,27 +49,31 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     
-    let status = ["Full time", "Intern", "Student"]
+    let depts = ["Customer Service", "Marketing", "Finance", "Operation", "Network Security", "Logistics", "Management"]
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    let positions = ["Middle-level Management", "Intern", "Co-op", "Senior", "First Level Management", "Executive"]
+    
+    let locations = ["Burnaby", "Toronto", "Montreal"]
+    
+    func numberOfComponents(in departmentPicker: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return status[row]
+    func pickerView(_ departmentPicker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return depts[row]
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return status.count
+    func pickerView(_ departmentPicker: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return depts.count
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        label.text = status[row]
-    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextButton.layer.cornerRadius = 10
+        nextButton.layer.masksToBounds = true
 
         // Do any additional setup after loading the view.
     }
