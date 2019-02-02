@@ -52,6 +52,8 @@ class Register1ViewController: UIViewController {
                     //check that user is not nil
                     if user != nil {
                         //GO TO NEXT PAGE
+                        
+                        
                             self.performSegue(withIdentifier: "accountCreationNextSegue", sender: self)
                     } else {
                         self.errorMessage.isHidden = false
@@ -60,11 +62,10 @@ class Register1ViewController: UIViewController {
                 }
                 
                 let ref = Database.database().reference()
-                let employeeRef = Database.database().reference().child("Employees")
-                
+                let employeeRef = ref.child("Employees")
                 guard let employeeID = Auth.auth().currentUser?.uid else {return}
                 
-                employeeRef.child(employeeID).setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
+                employeeRef.childByAutoId().setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
             }
         }
     }
