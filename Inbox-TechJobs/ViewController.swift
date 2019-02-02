@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         card.translatesAutoresizingMaskIntoConstraints = true ////TEMPORARY FIX
         let point = sender.translation(in: view)
         let xFromCenter = card.center.x - view.center.x
-        card.center = CGPoint(x: view.center.x + point.x, y: (view.center.y * 1.18) + point.y)
+        card.center = CGPoint(x: view.center.x + point.x, y: (view.center.y) + point.y)
         
         
         let scale = min(100/abs(xFromCenter), 1)
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
                 return
             }
             UIView.animate(withDuration: 0.2, animations: {
-                card.center = CGPoint(x: self.view.center.x, y: (self.view.center.y * 1.18))
+                card.center = CGPoint(x: self.view.center.x, y: (self.view.center.y))
                 self.yesnoImageView.alpha = 0
                 card.transform = CGAffineTransform.identity
             })
@@ -127,7 +127,7 @@ class ViewController: UIViewController {
             
             self.yesnoImageView.alpha = 0
             self.cardView.transform = CGAffineTransform.identity
-            self.cardView.center = CGPoint(x: self.view.center.x, y: (self.view.center.y * 1.18))
+            self.cardView.center = CGPoint(x: self.view.center.x, y: (self.view.center.y))
             self.cardView.alpha = 1
             })
             
