@@ -29,6 +29,8 @@ class Register1ViewController: UIViewController {
     }
     
     let ref = Database.database().reference().child("Employees")
+    
+    
     /*
     // MARK: - Navigation
 
