@@ -7,23 +7,31 @@
 //
 
 import UIKit
+import Firebase
 
 class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    @IBOutlet weak var education: UITextField!
+    @IBOutlet weak var _education: UITextField!
     
     
-    @IBOutlet weak var positionPicker: UIPickerView!
+    @IBOutlet weak var _positionPicker: UIPickerView!
     
-    @IBOutlet weak var locationPicker: UIPickerView!
+    @IBOutlet weak var _locationPicker: UIPickerView!
     
-    @IBOutlet weak var isMentor: UISwitch!
+    @IBOutlet weak var _isMentor: UISwitch!
     
     @IBOutlet weak var nextButton: UIButton!
     
-    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var _userImage: UIImageView!
+    
+    let ref = Database.database().reference().child("Employees")
     
     @IBAction func nextButtonAction(_ sender: Any) {
+        if let education = _education.text {
+            
+            
+            ref.childByAutoId().setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
+        }
     }
     
     @IBAction func importImage(_ sender: Any) {
@@ -37,7 +45,7 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            userImage.image = image
+            _userImage.image = image
             //PROFILE IMAGE GLOBALLY CHANGES, AND IN PROFILE TAB, AND IN INBOX TAB
             // UPLOAD IMAGE TO DATABASE???
         } else {

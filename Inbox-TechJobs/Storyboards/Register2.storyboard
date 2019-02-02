@@ -136,6 +136,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonAction:" destination="zTa-t9-AbV" eventType="touchUpInside" id="WG9-dj-l2X"/>
+                                    <action selector="register2NextTapped:" destination="zTa-t9-AbV" eventType="touchUpInside" id="Viy-gw-DGG"/>
                                     <segue destination="feq-Mj-bcu" kind="show" id="kLV-UA-k5A"/>
                                 </connections>
                             </button>
