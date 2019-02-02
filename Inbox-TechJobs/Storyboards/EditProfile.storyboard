@@ -22,8 +22,11 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Position" id="KFr-pi-rTe">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Yhw-Rj-a7v"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="PDv-Ls-Z5b"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="PDv-Ls-Z5b">
+                                            <connections>
+                                                <segue destination="2T9-MG-83L" kind="show" id="Uwi-7c-GjD"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -46,7 +49,7 @@
         <scene sceneID="viY-no-qPV">
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" id="2T9-MG-83L" customClass="ProfileViewController" customModule="Inbox_TechJobs" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OEV-bI-9ow">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="OEV-bI-9ow">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -87,10 +90,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vik-t8-VtM">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vik-t8-VtM">
                                 <rect key="frame" x="14" y="262" width="343" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Position"/>
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Position                                              &gt; ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dmQ-3w-wbh" kind="show" id="92N-LA-baD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,6 +121,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="positionButton" destination="vik-t8-VtM" id="0Sz-61-UED"/>
                         <outlet property="profilePicture" destination="XDw-2L-zO9" id="nM7-Jf-ynu"/>
                         <outlet property="userImage" destination="XDw-2L-zO9" id="VJB-xW-53c"/>
                     </connections>
@@ -120,4 +131,7 @@
             <point key="canvasLocation" x="-898.39999999999998" y="-2077.5112443778112"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="92N-LA-baD"/>
+    </inferredMetricsTieBreakers>
 </document>

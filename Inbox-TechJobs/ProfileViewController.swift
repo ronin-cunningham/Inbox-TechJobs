@@ -10,6 +10,7 @@ import UIKit
 
 class ProfileViewController : UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     @IBOutlet var profilePicture: UIImageView!
+    @IBOutlet weak var positionButton: UIButton!
     @IBOutlet weak var userImage: UIImageView!
     
     @IBAction func importImage(_ sender: Any) {
