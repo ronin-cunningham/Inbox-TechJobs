@@ -28,7 +28,6 @@ class Register1ViewController: UIViewController {
         // Do any additional setup after loading the view.
         }
     
-    let ref = Database.database().reference()
     /*
     // MARK: - Navigation
 
@@ -57,11 +56,12 @@ class Register1ViewController: UIViewController {
                     
                 }
                 
-            
+                let ref = Database.database().reference()
+                let employeeRef = Database.database().reference().child("Employees")
+                
                 guard let employeeID = Auth.auth().currentUser?.uid else {return}
                 
-                print(employeeID)
-                ref.child(employeeID).setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
+                employeeRef.child(employeeID).setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
             }
         }
     }
