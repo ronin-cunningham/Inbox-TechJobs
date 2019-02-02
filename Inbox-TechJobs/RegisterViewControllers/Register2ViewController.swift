@@ -27,11 +27,13 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     let ref = Database.database().reference()
     let employeeRef = Database.database().reference().child("Employees")
     
+    
     @IBAction func nextButtonAction(_ sender: Any) {
-        if let education = _education.text {
+        if let education = _education.text, let image = _userImage.image {
             guard let employeeID = Auth.auth().currentUser?.uid else {return}
             
-            employeeRef.child("-LXhTxFdKae1ks0uJc8t").updateChildValues(["education": education])
+            employeeRef.child(employeeID).updateChildValues(["education": education])
+            
         }
     }
     
@@ -42,6 +44,10 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
         image.allowsEditing = false
         self.present(image, animated: true)
+    }
+    
+    func uploadImageToFirebaseStorage(data: NSData) {
+        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
