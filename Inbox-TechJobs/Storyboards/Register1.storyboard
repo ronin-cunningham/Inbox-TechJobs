@@ -69,11 +69,10 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4h-oo-eMe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4h-oo-eMe">
                                 <rect key="frame" x="127" y="489" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.017548669817216256" green="0.13515608929903644" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Nextt">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -87,6 +86,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P4h-oo-eMe" firstAttribute="leading" secondItem="7qf-Cx-VoY" secondAttribute="leading" constant="127" id="WK8-Ts-tM0"/>
+                            <constraint firstItem="7qf-Cx-VoY" firstAttribute="bottom" secondItem="P4h-oo-eMe" secondAttribute="bottom" constant="148" id="Wuo-2P-VwO"/>
+                            <constraint firstItem="7qf-Cx-VoY" firstAttribute="trailing" secondItem="P4h-oo-eMe" secondAttribute="trailing" constant="128" id="Zh7-bu-bnF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7qf-Cx-VoY"/>
                     </view>
                     <connections>
