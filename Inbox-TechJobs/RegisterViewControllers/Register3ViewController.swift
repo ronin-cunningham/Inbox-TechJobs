@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class Register3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -39,6 +40,8 @@ class Register3ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     
     @IBAction func doneTapped(_ sender: UIButton) {
+        
+        
     }
     
     
