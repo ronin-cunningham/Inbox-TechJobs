@@ -85,7 +85,7 @@
         <scene sceneID="XVY-or-MmD">
             <objects>
                 <viewControllerPlaceholder storyboardName="SettingsTableViewController" id="9Va-WM-KfC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="U8z-vY-jEH"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="icons8-settings-40" id="U8z-vY-jEH"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdb-dQ-lRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +95,7 @@
         <scene sceneID="ymB-Kj-upv">
             <objects>
                 <viewControllerPlaceholder storyboardName="InboxTableViewController" id="adN-h1-zvx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pX2-u4-Eei"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="icons8-new-post-40" id="pX2-u4-Eei"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkJ-0W-C6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,4 +118,8 @@
             <point key="canvasLocation" x="-3743.1999999999998" y="-2367.1664167916042"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-new-post-40" width="30" height="30"/>
+        <image name="icons8-settings-40" width="30" height="30"/>
+    </resources>
 </document>
