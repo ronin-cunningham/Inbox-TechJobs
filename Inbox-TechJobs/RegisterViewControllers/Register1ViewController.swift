@@ -45,7 +45,6 @@ class Register1ViewController: UIViewController {
                 ref.childByAutoId().setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
                 Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                     //check that user is not nil
-                    
                     if user != nil {
                         //GO TO NEXT PAGE
                         self.performSegue(withIdentifier: "accountCreationNextSegue", sender: self)
