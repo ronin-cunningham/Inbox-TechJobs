@@ -10,14 +10,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Positon-->
         <scene sceneID="NeE-7H-AC4">
             <objects>
-                <viewController id="dmQ-3w-wbh" sceneMemberID="viewController">
+                <viewController id="dmQ-3w-wbh" userLabel="Positon" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2pz-nz-0H1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqu-sb-f4d">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Position" id="KFr-pi-rTe">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Yhw-Rj-a7v">
+                                            <connections>
+                                                <segue destination="2T9-MG-83L" kind="show" id="iYn-AV-48B"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="PDv-Ls-Z5b">
+                                            <connections>
+                                                <segue destination="2T9-MG-83L" kind="show" id="dYb-dC-8Nv"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zqu-sb-f4d" firstAttribute="leading" secondItem="F2L-hI-qis" secondAttribute="leading" id="EF1-rY-u8a"/>
+                            <constraint firstItem="Zqu-sb-f4d" firstAttribute="top" secondItem="F2L-hI-qis" secondAttribute="top" id="GGA-fX-tKn"/>
+                            <constraint firstItem="Zqu-sb-f4d" firstAttribute="trailing" secondItem="F2L-hI-qis" secondAttribute="trailing" id="Nyf-rl-ala"/>
+                            <constraint firstItem="Zqu-sb-f4d" firstAttribute="centerX" secondItem="2pz-nz-0H1" secondAttribute="centerX" id="dla-Z8-8B3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="F2L-hI-qis"/>
                     </view>
                 </viewController>
@@ -62,11 +87,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L7h-RH-n4m">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmO-Nr-Llh">
                                 <rect key="frame" x="127.5" y="527" width="120" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -78,6 +98,33 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L7h-RH-n4m">
+                                <rect key="frame" x="0.0" y="269" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="6NG-QA-1bW">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6NG-QA-1bW" id="nfU-zb-xgJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-2j-9CO">
+                                                    <rect key="frame" x="15" y="11" width="61" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dmQ-3w-wbh" kind="show" id="k9p-2Z-TNi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -106,4 +153,8 @@
             <point key="canvasLocation" x="-898.39999999999998" y="-2077.5112443778112"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="k9p-2Z-TNi"/>
+        <segue reference="iYn-AV-48B"/>
+    </inferredMetricsTieBreakers>
 </document>
