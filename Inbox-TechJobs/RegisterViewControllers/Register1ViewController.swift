@@ -26,7 +26,7 @@ class Register1ViewController: UIViewController {
         nextButton.layer.cornerRadius = 10
         nextButton.layer.masksToBounds = true
         // Do any additional setup after loading the view.
-    }
+        }
     
     let ref = Database.database().reference()
     /*
@@ -57,7 +57,9 @@ class Register1ViewController: UIViewController {
                     
                 }
                 guard let employeeID = Auth.auth().currentUser?.uid else {return}
-                ref.child("Employees/" + employeeID).setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
+                
+                print(employeeID)
+                ref.child(employeeID).setValue(["email": email, "password": password, "firstName": firstName, "lastName": lastName])
             }
         }
     }
