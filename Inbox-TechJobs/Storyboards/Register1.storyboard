@@ -55,9 +55,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4h-oo-eMe">
-                                <rect key="frame" x="162" y="487" width="52" height="30"/>
+                                <rect key="frame" x="161" y="487" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="hiihihihi"/>
+                                <state key="normal" title="bye bye"/>
                                 <connections>
                                     <action selector="nextTapped:" destination="ncL-gy-doU" eventType="touchUpInside" id="bv8-bu-qGM"/>
                                 </connections>
