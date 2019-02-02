@@ -95,7 +95,7 @@
         <scene sceneID="ymB-Kj-upv">
             <objects>
                 <viewControllerPlaceholder storyboardName="InboxTableViewController" id="adN-h1-zvx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="icons8-new-post-40" id="pX2-u4-Eei"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="icons8-new-post-40" selectedImage="icons8-new-post-40" id="pX2-u4-Eei"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkJ-0W-C6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
