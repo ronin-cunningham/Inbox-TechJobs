@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+
 class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var _education: UITextField!
@@ -32,6 +33,7 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
             
             employeeRef.child(employeeID).updateChildValues(["education": education])
             
+            uploadImageToFirebaseStorage(data: image)
         }
     }
     
@@ -44,7 +46,7 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
         self.present(image, animated: true)
     }
     
-    func uploadImageToFirebaseStorage(data: NSData) {
+    func uploadImageToFirebaseStorage(data: UIImage) {
         
     }
     
