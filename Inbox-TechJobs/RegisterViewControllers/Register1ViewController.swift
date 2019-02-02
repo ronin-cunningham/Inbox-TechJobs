@@ -43,15 +43,16 @@ class Register1ViewController: UIViewController {
     @IBAction func nextTapped(_ sender: UIButton) {
         if let email = _email.text, let password = _password.text, let firstName = _firstName.text, let lastName = _lastName.text, let reEnterPassword = _reEnterPassword.text {
             print(email)
+            self.performSegue(withIdentifier: "accountCreationNextSegue", sender: self)
             if (password == reEnterPassword) {
                 
                 Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                     //check that user is not nil
                     if user != nil {
                         //GO TO NEXT PAGE
-                        self.performSegue(withIdentifier: "accountCreationNextSegue", sender: self)
+                        
                     } else {
-                        self.errorMessage.isHidden = true
+                        self.errorMessage.isHidden = false
                     }
                     
                 }

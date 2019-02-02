@@ -11,13 +11,6 @@ import UIKit
 class Register3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     
-    @IBOutlet var travelLabel: UILabel!
-    @IBAction func UISlider(_ sender: UISlider) {
-        travelLabel.text = String(Int(sender.value)) + "km"
-    }
-    
-    @IBOutlet var degreeLabel: UILabel!
-    @IBOutlet var degreePickerView: UIPickerView!
     
     let degrees = ["Computer Science", "Computer Engineering", "Software Engineering", "MBA"]
     let travelDistance = ["10km", "20km", "30km", "40km", "50km"]
@@ -43,10 +36,6 @@ class Register3ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
 
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        degreeLabel.text = degrees[row]
-
-    }
     
     
     @IBAction func doneTapped(_ sender: UIButton) {

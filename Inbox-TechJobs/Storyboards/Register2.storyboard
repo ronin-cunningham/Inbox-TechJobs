@@ -92,9 +92,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CgN-cp-hhE" userLabel="isMentor">
                                                 <rect key="frame" x="190.5" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="isMentorAction:" destination="zTa-t9-AbV" eventType="valueChanged" id="WD1-A4-Sqp"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -139,7 +136,6 @@
                         <outlet property="isMentor" destination="CgN-cp-hhE" id="dge-un-z1d"/>
                         <outlet property="locationPicker" destination="ylZ-aI-Zed" id="CLd-jq-CsM"/>
                         <outlet property="nextButton" destination="03s-Ib-hG0" id="Uf0-pZ-sYw"/>
-                        <outlet property="pickerView" destination="81s-OB-48b" id="hDZ-DN-E8u"/>
                         <outlet property="positionPicker" destination="BVt-GK-v95" id="hXy-dM-vJH"/>
                         <outlet property="userImage" destination="mNB-Ff-1ck" id="pfy-jf-rRB"/>
                     </connections>

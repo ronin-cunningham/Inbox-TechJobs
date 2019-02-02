@@ -39,12 +39,6 @@
                                     <segue destination="d4a-ey-zCl" kind="show" id="7hJ-tM-h0v"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Availability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f3-op-qwf">
-                                <rect key="frame" x="145" y="77.5" width="81" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="d82-NS-XKZ">
                                 <rect key="frame" x="104" y="125" width="166" height="331"/>
                                 <subviews>
@@ -141,24 +135,17 @@
                             <constraint firstItem="drI-WC-haO" firstAttribute="top" secondItem="d82-NS-XKZ" secondAttribute="bottom" constant="53" id="EPu-8r-5Go"/>
                             <constraint firstItem="drI-WC-haO" firstAttribute="top" secondItem="d82-NS-XKZ" secondAttribute="bottom" constant="53" id="GVw-I7-Raj"/>
                             <constraint firstItem="drI-WC-haO" firstAttribute="leading" secondItem="SLt-xf-gpj" secondAttribute="leading" constant="36" id="IgK-Ji-iiD"/>
-                            <constraint firstItem="6f3-op-qwf" firstAttribute="leading" secondItem="SLt-xf-gpj" secondAttribute="leading" constant="145" id="KXx-Yh-hC2"/>
                             <constraint firstItem="Xl0-In-0aE" firstAttribute="top" secondItem="drI-WC-haO" secondAttribute="bottom" constant="29" id="NV9-TM-JPS"/>
                             <constraint firstItem="xZb-TT-btC" firstAttribute="leading" secondItem="SLt-xf-gpj" secondAttribute="leading" constant="16" id="OBX-ug-Lwz"/>
                             <constraint firstItem="d82-NS-XKZ" firstAttribute="leading" secondItem="SLt-xf-gpj" secondAttribute="leading" constant="104" id="OiT-tC-jMP"/>
                             <constraint firstItem="SLt-xf-gpj" firstAttribute="trailing" secondItem="drI-WC-haO" secondAttribute="trailing" constant="37" id="QeT-l2-bbc"/>
-                            <constraint firstItem="SLt-xf-gpj" firstAttribute="trailing" secondItem="6f3-op-qwf" secondAttribute="trailing" constant="149" id="T0S-D7-QkS"/>
-                            <constraint firstItem="6f3-op-qwf" firstAttribute="top" secondItem="2Bv-EU-SJi" secondAttribute="bottom" constant="21.5" id="UmT-7l-AYT"/>
                             <constraint firstItem="Xl0-In-0aE" firstAttribute="leading" secondItem="SLt-xf-gpj" secondAttribute="leading" constant="165" id="Ydf-zq-CcI"/>
                             <constraint firstItem="SLt-xf-gpj" firstAttribute="trailing" secondItem="Xl0-In-0aE" secondAttribute="trailing" constant="169" id="ijP-2s-OI2"/>
                             <constraint firstItem="SLt-xf-gpj" firstAttribute="trailing" secondItem="d82-NS-XKZ" secondAttribute="trailing" constant="105" id="l5k-1r-Y67"/>
                             <constraint firstItem="SLt-xf-gpj" firstAttribute="bottom" secondItem="Xl0-In-0aE" secondAttribute="bottom" constant="69" id="mEr-EF-3jL"/>
-                            <constraint firstItem="d82-NS-XKZ" firstAttribute="top" secondItem="6f3-op-qwf" secondAttribute="bottom" constant="27" id="npB-UO-wGQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SLt-xf-gpj"/>
                     </view>
-                    <connections>
-                        <outlet property="degreeLabel" destination="6f3-op-qwf" id="ecd-21-ynH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqw-Fa-FT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

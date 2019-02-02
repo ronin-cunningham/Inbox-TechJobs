@@ -12,7 +12,6 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     @IBOutlet weak var education: UITextField!
     
-    @IBOutlet weak var departmentPicker: UIPickerView!
     
     @IBOutlet weak var positionPicker: UIPickerView!
     

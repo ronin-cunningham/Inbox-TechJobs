@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Inbox-TechJobs/RegisterViewControllers/Register1ViewController.swift"
-            timestampString = "570802746.797925"
+            timestampString = "570804487.72384"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "nextTapped(_:)"
-            landmarkType = "7">
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "Register1ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
