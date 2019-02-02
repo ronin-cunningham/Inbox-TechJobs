@@ -9,14 +9,15 @@
 import UIKit
 
 class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    @IBOutlet var label: UILabel!
     
     @IBOutlet weak var education: UITextField!
+    
     @IBOutlet weak var departmentPicker: UIPickerView!
     
     @IBOutlet weak var positionPicker: UIPickerView!
     
     @IBOutlet weak var locationPicker: UIPickerView!
+    
     @IBOutlet weak var isMentor: UISwitch!
     
     @IBOutlet weak var nextButton: UIButton!
@@ -48,23 +49,24 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     
-    let status = ["Full time", "Intern", "Student"]
+    let depts = ["Customer Service", "Marketing", "Finance", "Operation", "Network Security", "Logistics", "Management"]
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    let positions = ["Middle-level Management", "Intern", "Co-op", "Senior", "First Level Management", "Executive"]
+    
+    let locations = ["Burnaby", "Toronto", "Montreal"]
+    
+    func numberOfComponents(in departmentPicker: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return status[row]
+    func pickerView(_ departmentPicker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return depts[row]
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return status.count
+    func pickerView(_ departmentPicker: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return depts.count
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        label.text = status[row]
-    }
     
     
     override func viewDidLoad() {
