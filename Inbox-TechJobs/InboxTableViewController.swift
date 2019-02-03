@@ -19,6 +19,9 @@ var myIndex = 0
 
 class InboxTableViewController: UITableViewController {
 
+    override func viewDidLoad() {
+        handleUpdatingBios()
+    }
 
 
     // MARK: - Table view data source
@@ -32,6 +35,9 @@ class InboxTableViewController: UITableViewController {
                 let lastName = bioData["lastName"] as? String ?? ""
                 connectedUsers.append(firstName)
                 connectedUsers.append(lastName)
+                
+                print(firstName)
+                print(lastName)
             }
         }
         
