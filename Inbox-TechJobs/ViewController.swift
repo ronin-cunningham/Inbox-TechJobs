@@ -17,9 +17,12 @@ class ViewController: UIViewController {
     var card: String = ""
     var previewCard: String = ""
     
-    @IBOutlet weak var userTestLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var departmentLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var positionLabel: UILabel!
     
-    let cardImageArray = ["Sean Lee","Nicole Pitre"]
+    
     
     @IBOutlet var previewCardImageView: UIImageView!
     @IBOutlet var cardView: UIView!
@@ -34,10 +37,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         divisor = (view.frame.width/2)/0.61
         
-        card = "Sean Lee" //DATABASE
+        card = cardImageArray[0] //DATABASE
 
 
-        previewCard = "Nicole Pitre" //DATABASE
+        previewCard = cardImageArray[1] //DATABASE
         
         
         cardImageView.image = UIImage(named: card)//RANDOMIZE THIS
@@ -56,7 +59,7 @@ class ViewController: UIViewController {
         card.translatesAutoresizingMaskIntoConstraints = true ////TEMPORARY FIX
         let point = sender.translation(in: view)
         let xFromCenter = card.center.x - view.center.x
-        card.center = CGPoint(x: view.center.x + point.x, y: (view.center.y * 1.18) + point.y)
+        card.center = CGPoint(x: view.center.x + point.x, y: (view.center.y) + point.y)
         
         
         let scale = min(100/abs(xFromCenter), 1)
@@ -97,7 +100,7 @@ class ViewController: UIViewController {
                 return
             }
             UIView.animate(withDuration: 0.2, animations: {
-                card.center = CGPoint(x: self.view.center.x, y: (self.view.center.y * 1.18))
+                card.center = CGPoint(x: self.view.center.x, y: (self.view.center.y))
                 self.yesnoImageView.alpha = 0
                 card.transform = CGAffineTransform.identity
             })
@@ -126,7 +129,7 @@ class ViewController: UIViewController {
             
             self.yesnoImageView.alpha = 0
             self.cardView.transform = CGAffineTransform.identity
-            self.cardView.center = CGPoint(x: self.view.center.x, y: (self.view.center.y * 1.18))
+            self.cardView.center = CGPoint(x: self.view.center.x, y: (self.view.center.y))
             self.cardView.alpha = 1
             })
             

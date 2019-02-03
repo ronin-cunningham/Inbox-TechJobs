@@ -57,7 +57,7 @@
         <scene sceneID="rIs-vb-Za8">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="ProfileViewController" storyboardName="EditProfile" referencedIdentifier="ProfileViewController" id="k0U-bf-qr5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="icons8-male-user-40" selectedImage="icons8-male-user-40" id="3a0-Eq-pVC"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="icons8-male-user-40" selectedImage="icons8-male-user-40" id="3a0-Eq-pVC"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iN5-hV-gag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +67,7 @@
         <scene sceneID="LM4-2D-7Ki">
             <objects>
                 <viewControllerPlaceholder storyboardName="ViewController" id="8mE-zc-amW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bHC-fu-Yrp"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-new-post-40" landscapeImage="icons8-new-post-40" selectedImage="icons8-new-post-40" id="bHC-fu-Yrp"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVB-q9-Hfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,7 +85,7 @@
         <scene sceneID="XVY-or-MmD">
             <objects>
                 <viewControllerPlaceholder storyboardName="SettingsTableViewController" id="9Va-WM-KfC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="icons8-settings-40" landscapeImage="icons8-settings-40" selectedImage="icons8-settings-40" id="U8z-vY-jEH"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="icons8-settings-40" landscapeImage="icons8-settings-40" selectedImage="icons8-settings-40" id="U8z-vY-jEH"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdb-dQ-lRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +95,7 @@
         <scene sceneID="ymB-Kj-upv">
             <objects>
                 <viewControllerPlaceholder storyboardName="InboxTableViewController" id="adN-h1-zvx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="icons8-new-post-40" selectedImage="icons8-new-post-40" id="pX2-u4-Eei"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-new-post-40" landscapeImage="icons8-new-post-40" selectedImage="icons8-new-post-40" id="pX2-u4-Eei"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkJ-0W-C6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,8 +119,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-male-user-40" width="30" height="30"/>
-        <image name="icons8-new-post-40" width="30" height="30"/>
-        <image name="icons8-settings-40" width="30" height="30"/>
+        <image name="icons8-male-user-40" width="40" height="40"/>
+        <image name="icons8-new-post-40" width="40" height="40"/>
+        <image name="icons8-settings-40" width="40" height="40"/>
     </resources>
 </document>
