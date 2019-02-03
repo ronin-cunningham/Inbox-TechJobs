@@ -7,6 +7,7 @@
 //
 
 import UIKit
+let cardImageArray = ["Sean Lee","Nicole Pitre"]
 
 class Helper{
     static func instBackground(view1 : UIView, bckgr : UIImage, alph : CGFloat) {

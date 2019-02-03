@@ -17,9 +17,12 @@ class ViewController: UIViewController {
     var card: String = ""
     var previewCard: String = ""
     
-    @IBOutlet weak var userTestLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var departmentLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var positionLabel: UILabel!
     
-    let cardImageArray = ["Sean Lee","Nicole Pitre"]
+    
     
     @IBOutlet var previewCardImageView: UIImageView!
     @IBOutlet var cardView: UIView!
@@ -34,10 +37,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         divisor = (view.frame.width/2)/0.61
         
-        card = "Sean Lee" //DATABASE
+        card = cardImageArray[0] //DATABASE
 
 
-        previewCard = "Nicole Pitre" //DATABASE
+        previewCard = cardImageArray[1] //DATABASE
         
         
         cardImageView.image = UIImage(named: card)//RANDOMIZE THIS
