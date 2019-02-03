@@ -52,6 +52,11 @@ class ViewController: UIViewController {
         previewCardImageView.layer.cornerRadius = 15.0
         previewCardImageView.clipsToBounds = true
         self.tabBarController?.navigationItem.hidesBackButton = true
+        nameLabel.text = card
+        positionLabel.text = positionArray[0]
+        locationLabel.text = locationArray[0]
+        departmentLabel.text = departmentArray[0]
+        
     }
     
     @IBAction func panCard(_ sender: UIPanGestureRecognizer) {
@@ -108,15 +113,25 @@ class ViewController: UIViewController {
     }
     
     
+//FIND HARD CODED STUFF
+    func findCard(x: [String]) -> String {
+        let randIndex = Int(arc4random_uniform(UInt32(x.count)))
+        let card = x[randIndex]
+        departmentLabel.text = departmentArray[randIndex]
+        locationLabel.text = locationArray[randIndex]
+        positionLabel.text = positionArray[randIndex]
+        return card
+    }
+    
     func resetCard() {
         
         let bufferTime = 0.25
         DispatchQueue.main.asyncAfter(deadline: .now() + bufferTime, execute: {
-            var temp = self.card //temp to rotate DELETE IN REAL VERSION
             self.card = self.previewCard
+            self.nameLabel.text = self.card
+                
+            self.previewCard = self.findCard(x: cardImageArray)
             
-            
-            self.previewCard = temp //DATABASE //temp to rotate DELETE IN REAL VERSION
             
             /*
             self.card = self.previewCard
@@ -132,6 +147,9 @@ class ViewController: UIViewController {
             self.cardView.center = CGPoint(x: self.view.center.x, y: (self.view.center.y))
             self.cardView.alpha = 1
             })
+        
+        
+        
             
         
             

@@ -10,9 +10,9 @@ import UIKit
 
 class ProfileViewController : UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     @IBOutlet var profilePicture: UIImageView!
-    @IBOutlet weak var positionButton: UIButton!
     @IBOutlet weak var userImage: UIImageView!
     
+    @IBOutlet weak var descriptionText: UITextView!
     @IBAction func importImage(_ sender: Any) {
         let image = UIImagePickerController()
         image.delegate = self
@@ -41,8 +41,16 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     
     
     
+    
+    
     override func viewDidLoad() {
         profilePicture.image = UIImage(imageLiteralResourceName: "icons8-name-90")
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //dismisses keyboard
+        descriptionText.resignFirstResponder()
+        
     }
     
     

@@ -20,11 +20,11 @@ class InboxSpecificUserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        userName.text = connectedUsers[myIndex]
+        userName.text = cardImageArray[myIndex]
         userDescription.text = userDesc[myIndex]
         
         //REQUIRES USER'S IMAGE NAME BE THEIR IMAGE FILE NAME
-        userImage.image = UIImage(named: connectedUsers[myIndex] + ".jpg")
+        userImage.image = UIImage(named: cardImageArray[myIndex] + ".jpg")
         
         
 

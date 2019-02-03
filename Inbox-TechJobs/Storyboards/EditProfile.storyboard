@@ -10,41 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Positon-->
-        <scene sceneID="NeE-7H-AC4">
-            <objects>
-                <viewController id="dmQ-3w-wbh" userLabel="Positon" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2pz-nz-0H1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqu-sb-f4d">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Position" id="KFr-pi-rTe">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="PDv-Ls-Z5b">
-                                            <connections>
-                                                <segue destination="2T9-MG-83L" kind="show" id="Uwi-7c-GjD"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Zqu-sb-f4d" firstAttribute="leading" secondItem="F2L-hI-qis" secondAttribute="leading" id="EF1-rY-u8a"/>
-                            <constraint firstItem="Zqu-sb-f4d" firstAttribute="top" secondItem="F2L-hI-qis" secondAttribute="top" id="GGA-fX-tKn"/>
-                            <constraint firstItem="Zqu-sb-f4d" firstAttribute="trailing" secondItem="F2L-hI-qis" secondAttribute="trailing" id="Nyf-rl-ala"/>
-                            <constraint firstItem="Zqu-sb-f4d" firstAttribute="centerX" secondItem="2pz-nz-0H1" secondAttribute="centerX" id="dla-Z8-8B3"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="F2L-hI-qis"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x7N-BD-Yzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-7" y="-2334"/>
-        </scene>
         <!--Edit profile-->
         <scene sceneID="viY-no-qPV">
             <objects>
@@ -54,33 +19,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="u3K-WI-uc2">
-                                <rect key="frame" x="27" y="53" width="320" height="128"/>
+                                <rect key="frame" x="27" y="53" width="320" height="150"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XDw-2L-zO9">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selfie" translatesAutoresizingMaskIntoConstraints="NO" id="XDw-2L-zO9">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="150"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="WNB-dX-tzU"/>
                                             <constraint firstAttribute="width" constant="128" id="yFb-XU-9KG"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mz-ft-YNl">
-                                        <rect key="frame" x="167" y="0.0" width="153" height="128"/>
+                                        <rect key="frame" x="167" y="0.0" width="153" height="150"/>
                                         <state key="normal" title="Change profile picture"/>
                                         <connections>
                                             <action selector="importImage:" destination="2T9-MG-83L" eventType="touchUpInside" id="ytJ-0j-6AH"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ZAI-4X-LsM"/>
+                                </constraints>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="testing" translatesAutoresizingMaskIntoConstraints="NO" id="5Zw-cV-dYg">
-                                <rect key="frame" x="63" y="405" width="244" height="242"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I am working in software development and I need someone to help with creating a rest API." translatesAutoresizingMaskIntoConstraints="NO" id="5Zw-cV-dYg">
+                                <rect key="frame" x="65" y="272" width="244" height="242"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmO-Nr-Llh">
-                                <rect key="frame" x="127.5" y="522" width="120" height="30"/>
+                                <rect key="frame" x="127.5" y="555" width="120" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="nwG-kk-qtG"/>
@@ -90,22 +57,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vik-t8-VtM">
-                                <rect key="frame" x="14" y="262" width="343" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.015686274510000001" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Position                                              &gt; ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dmQ-3w-wbh" kind="show" id="92N-LA-baD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="wov-NK-ucR" firstAttribute="bottom" secondItem="AmO-Nr-Llh" secondAttribute="bottom" constant="66" id="9Qx-UG-wQP"/>
+                            <constraint firstItem="wov-NK-ucR" firstAttribute="bottom" secondItem="AmO-Nr-Llh" secondAttribute="bottom" constant="33" id="9Qx-UG-wQP"/>
                             <constraint firstItem="wov-NK-ucR" firstAttribute="trailing" secondItem="AmO-Nr-Llh" secondAttribute="trailing" constant="127.5" id="CX1-JG-x2j"/>
                             <constraint firstItem="AmO-Nr-Llh" firstAttribute="leading" secondItem="wov-NK-ucR" secondAttribute="leading" constant="127.5" id="JiQ-tg-y0g"/>
                             <constraint firstItem="AmO-Nr-Llh" firstAttribute="centerX" secondItem="OEV-bI-9ow" secondAttribute="centerX" id="Pti-Nb-oTx"/>
@@ -122,7 +77,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="positionButton" destination="vik-t8-VtM" id="0Sz-61-UED"/>
+                        <outlet property="descriptionText" destination="5Zw-cV-dYg" id="1fr-Ld-9Xh"/>
                         <outlet property="profilePicture" destination="XDw-2L-zO9" id="nM7-Jf-ynu"/>
                         <outlet property="userImage" destination="XDw-2L-zO9" id="VJB-xW-53c"/>
                     </connections>
@@ -133,9 +88,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-male-user-40" width="40" height="40"/>
+        <image name="icons8-male-user-40" width="30" height="30"/>
+        <image name="selfie" width="2320" height="3088"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="92N-LA-baD"/>
-    </inferredMetricsTieBreakers>
 </document>
