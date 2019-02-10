@@ -113,7 +113,7 @@ class ViewController: UIViewController {
     }
     
     
-//FIND HARD CODED STUFF
+//FIND HARD CODED STUFF <<TEMP>>
     func findCard(x: [String]) -> String {
         let randIndex = Int(arc4random_uniform(UInt32(x.count)))
         let card = x[randIndex]
