@@ -77,6 +77,7 @@ class Register2ViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     let locations = ["Burnaby", "Toronto", "Montreal"]
     
+    
     func numberOfComponents(in departmentPicker: UIPickerView) -> Int {
         return 1
     }
